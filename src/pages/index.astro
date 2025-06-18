@@ -1,16 +1,21 @@
 ---
-
+import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Skills from '../components/Skills';
+import Projects from '../components/Projects';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Beatriz - Analista de Dados & Business Intelligence">
+	<Navbar client:load />
+	<Hero client:load />
+	<About client:load />
+	<Skills client:load />
+	<Projects client:load />
+	<Contact client:load />
+	<Footer client:load />
+</Layout>

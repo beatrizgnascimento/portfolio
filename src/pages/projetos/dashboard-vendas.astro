@@ -1,0 +1,301 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+---
+
+<Layout title="Dashboard de Vendas E-commerce - Beatriz">
+  <Navbar client:load />
+  
+  <main class="pt-16 bg-catppuccin-base min-h-screen">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Breadcrumb -->
+      <nav class="mb-8">
+        <ol class="flex items-center space-x-2 text-catppuccin-subtext0">
+          <li><a href="/" class="hover:text-catppuccin-lavender transition-colors">Início</a></li>
+          <li><i class="fas fa-chevron-right text-xs"></i></li>
+          <li><a href="/#projetos" class="hover:text-catppuccin-lavender transition-colors">Projetos</a></li>
+          <li><i class="fas fa-chevron-right text-xs"></i></li>
+          <li class="text-catppuccin-text">Dashboard de Vendas</li>
+        </ol>
+      </nav>
+
+      <!-- Project Header -->
+      <header class="mb-12">
+        <div class="bg-catppuccin-surface0 rounded-lg p-8 mb-8">
+          <h1 class="text-4xl font-bold text-catppuccin-lavender mb-4">
+            Dashboard de Vendas E-commerce
+          </h1>
+          <p class="text-lg text-catppuccin-subtext0 mb-6">
+            Dashboard interativo para análise de vendas online com métricas de conversão, 
+            segmentação de clientes e previsões de demanda.
+          </p>
+          
+          <div class="flex flex-wrap gap-4 mb-6">
+            <span class="bg-catppuccin-mauve text-catppuccin-base px-3 py-1 rounded-full text-sm font-medium">
+              Business Intelligence
+            </span>
+            <span class="bg-catppuccin-blue text-catppuccin-base px-3 py-1 rounded-full text-sm font-medium">
+              Power BI
+            </span>
+            <span class="bg-catppuccin-green text-catppuccin-base px-3 py-1 rounded-full text-sm font-medium">
+              SQL
+            </span>
+            <span class="bg-catppuccin-yellow text-catppuccin-base px-3 py-1 rounded-full text-sm font-medium">
+              DAX
+            </span>
+          </div>
+
+          <div class="flex flex-wrap gap-4">
+            <a 
+              href="https://github.com/beatriz/dashboard-vendas" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="flex items-center space-x-2 bg-catppuccin-surface1 text-catppuccin-text px-4 py-2 rounded-lg hover:bg-catppuccin-surface2 transition-colors"
+            >
+              <i class="fab fa-github"></i>
+              <span>Ver Código</span>
+            </a>
+            <a 
+              href="#" 
+              class="flex items-center space-x-2 bg-gradient-to-r from-catppuccin-mauve to-catppuccin-blue text-catppuccin-base px-4 py-2 rounded-lg hover:shadow-lg transition-all"
+            >
+              <i class="fas fa-external-link-alt"></i>
+              <span>Demo ao Vivo</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Project Content -->
+      <div class="space-y-12">
+        <!-- Overview -->
+        <section>
+          <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Visão Geral</h2>
+          <div class="bg-catppuccin-surface0 rounded-lg p-6">
+            <p class="text-catppuccin-subtext0 leading-relaxed mb-4">
+              Este projeto foi desenvolvido para uma empresa de e-commerce que precisava de insights 
+              mais profundos sobre suas vendas e comportamento dos clientes. O dashboard oferece uma 
+              visão completa do funil de vendas, desde a aquisição até a conversão.
+            </p>
+            <p class="text-catppuccin-subtext0 leading-relaxed">
+              O objetivo principal era criar uma ferramenta que permitisse aos stakeholders tomarem 
+              decisões baseadas em dados em tempo real, identificando oportunidades de crescimento 
+              e otimizando campanhas de marketing.
+            </p>
+          </div>
+        </section>
+
+        <!-- Objectives -->
+        <section>
+          <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Objetivos</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-catppuccin-surface0 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-catppuccin-text mb-4 flex items-center">
+                <i class="fas fa-bullseye text-catppuccin-mauve mr-3"></i>
+                Principais Metas
+              </h3>
+              <ul class="space-y-2 text-catppuccin-subtext0">
+                <li>• Aumentar a taxa de conversão em 15%</li>
+                <li>• Reduzir o custo de aquisição de clientes</li>
+                <li>• Melhorar a retenção de clientes</li>
+                <li>• Otimizar campanhas de marketing</li>
+              </ul>
+            </div>
+            <div class="bg-catppuccin-surface0 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-catppuccin-text mb-4 flex items-center">
+                <i class="fas fa-chart-line text-catppuccin-blue mr-3"></i>
+                KPIs Monitorados
+              </h3>
+              <ul class="space-y-2 text-catppuccin-subtext0">
+                <li>• Receita total e crescimento</li>
+                <li>• Taxa de conversão por canal</li>
+                <li>• Valor médio do pedido</li>
+                <li>• Lifetime Value dos clientes</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Implementation -->
+        <section>
+          <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Implementação</h2>
+          
+          <!-- Data Pipeline -->
+          <div class="bg-catppuccin-surface0 rounded-lg p-6 mb-6">
+            <h3 class="text-xl font-semibold text-catppuccin-text mb-4">Pipeline de Dados</h3>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-8 h-8 bg-catppuccin-green rounded-full flex items-center justify-center text-catppuccin-base text-sm font-bold">
+                  1
+                </div>
+                <div>
+                  <h4 class="font-medium text-catppuccin-text">Extração de Dados</h4>
+                  <p class="text-catppuccin-subtext0 text-sm">
+                    Conexão com APIs do e-commerce, Google Analytics e CRM para extrair dados de vendas, 
+                    comportamento do usuário e informações de clientes.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-8 h-8 bg-catppuccin-blue rounded-full flex items-center justify-center text-catppuccin-base text-sm font-bold">
+                  2
+                </div>
+                <div>
+                  <h4 class="font-medium text-catppuccin-text">Transformação e Limpeza</h4>
+                  <p class="text-catppuccin-subtext0 text-sm">
+                    Limpeza de dados, tratamento de valores nulos, padronização de formatos e criação 
+                    de métricas calculadas usando SQL e DAX.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-8 h-8 bg-catppuccin-mauve rounded-full flex items-center justify-center text-catppuccin-base text-sm font-bold">
+                  3
+                </div>
+                <div>
+                  <h4 class="font-medium text-catppuccin-text">Modelagem de Dados</h4>
+                  <p class="text-catppuccin-subtext0 text-sm">
+                    Criação de modelo dimensional com fatos de vendas, dimensões de tempo, produtos, 
+                    clientes e canais de marketing.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-8 h-8 bg-catppuccin-yellow rounded-full flex items-center justify-center text-catppuccin-base text-sm font-bold">
+                  4
+                </div>
+                <div>
+                  <h4 class="font-medium text-catppuccin-text">Visualização</h4>
+                  <p class="text-catppuccin-subtext0 text-sm">
+                    Desenvolvimento de dashboards interativos no Power BI com filtros dinâmicos, 
+                    drill-down capabilities e alertas automáticos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Features -->
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-catppuccin-surface0 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-catppuccin-text mb-4">Funcionalidades Principais</h3>
+              <ul class="space-y-2 text-catppuccin-subtext0">
+                <li>• Dashboard executivo com KPIs principais</li>
+                <li>• Análise de funil de conversão</li>
+                <li>• Segmentação de clientes</li>
+                <li>• Análise de produtos mais vendidos</li>
+                <li>• Performance por canal de marketing</li>
+                <li>• Previsões de demanda</li>
+              </ul>
+            </div>
+            <div class="bg-catppuccin-surface0 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-catppuccin-text mb-4">Tecnologias Utilizadas</h3>
+              <ul class="space-y-2 text-catppuccin-subtext0">
+                <li>• <span class="text-catppuccin-blue">Power BI</span> - Visualização e dashboards</li>
+                <li>• <span class="text-catppuccin-green">SQL Server</span> - Banco de dados</li>
+                <li>• <span class="text-catppuccin-yellow">DAX</span> - Cálculos e métricas</li>
+                <li>• <span class="text-catppuccin-mauve">Power Query</span> - ETL</li>
+                <li>• <span class="text-catppuccin-teal">Power Automate</span> - Automação</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Results -->
+        <section>
+          <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Resultados</h2>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-catppuccin-surface0 rounded-lg p-6 text-center">
+              <div class="text-3xl font-bold text-catppuccin-green mb-2">+18%</div>
+              <div class="text-catppuccin-subtext1">Taxa de Conversão</div>
+            </div>
+            <div class="bg-catppuccin-surface0 rounded-lg p-6 text-center">
+              <div class="text-3xl font-bold text-catppuccin-blue mb-2">-25%</div>
+              <div class="text-catppuccin-subtext1">Custo de Aquisição</div>
+            </div>
+            <div class="bg-catppuccin-surface0 rounded-lg p-6 text-center">
+              <div class="text-3xl font-bold text-catppuccin-mauve mb-2">+30%</div>
+              <div class="text-catppuccin-subtext1">Receita Total</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Challenges -->
+        <section>
+          <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Desafios e Soluções</h2>
+          <div class="space-y-4">
+            <div class="bg-catppuccin-surface0 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-catppuccin-text mb-3">Desafio: Integração de Múltiplas Fontes</h3>
+              <p class="text-catppuccin-subtext0 mb-3">
+                O projeto envolvia dados de diferentes sistemas (e-commerce, CRM, Google Analytics) 
+                com formatos e estruturas distintas.
+              </p>
+              <p class="text-catppuccin-subtext0">
+                <strong>Solução:</strong> Criação de um processo de ETL robusto usando Power Query 
+                com tratamento de erros e validação de dados, garantindo consistência e qualidade.
+              </p>
+            </div>
+            <div class="bg-catppuccin-surface0 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-catppuccin-text mb-3">Desafio: Performance de Consultas</h3>
+              <p class="text-catppuccin-subtext0 mb-3">
+                O volume de dados crescia rapidamente, causando lentidão nas consultas e atualizações.
+              </p>
+              <p class="text-catppuccin-subtext0">
+                <strong>Solução:</strong> Implementação de particionamento de dados, índices otimizados 
+                e cache inteligente, reduzindo o tempo de carregamento em 70%.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Lessons Learned -->
+        <section>
+          <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Aprendizados</h2>
+          <div class="bg-catppuccin-surface0 rounded-lg p-6">
+            <ul class="space-y-3 text-catppuccin-subtext0">
+              <li class="flex items-start space-x-3">
+                <i class="fas fa-check text-catppuccin-green mt-1"></i>
+                <span>A importância de entender profundamente o negócio antes de começar a modelagem de dados</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fas fa-check text-catppuccin-green mt-1"></i>
+                <span>Como otimizar consultas DAX para melhor performance em grandes volumes de dados</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fas fa-check text-catppuccin-green mt-1"></i>
+                <span>A necessidade de criar dashboards intuitivos que atendam diferentes níveis de usuários</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fas fa-check text-catppuccin-green mt-1"></i>
+                <span>Como implementar automação para manter os dados sempre atualizados</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- Navigation -->
+      <div class="mt-12 pt-8 border-t border-catppuccin-surface0">
+        <div class="flex justify-between items-center">
+          <a 
+            href="/#projetos" 
+            class="flex items-center space-x-2 text-catppuccin-subtext1 hover:text-catppuccin-lavender transition-colors"
+          >
+            <i class="fas fa-arrow-left"></i>
+            <span>Voltar aos Projetos</span>
+          </a>
+          <a 
+            href="/#contato" 
+            class="flex items-center space-x-2 bg-gradient-to-r from-catppuccin-mauve to-catppuccin-blue text-catppuccin-base px-6 py-3 rounded-lg hover:shadow-lg transition-all"
+          >
+            <span>Próximo Projeto</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <Footer client:load />
+</Layout> 
