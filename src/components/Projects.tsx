@@ -40,10 +40,10 @@ const Projects = () => {
       id: 1,
       title: "Dashboard de Análise de Desmatamento de Biomas",
       description:
-        "Dashboard interativo para análise de vendas online com métricas de conversão, segmentação de clientes e previsões de demanda.",
+        "Dashboard interativo para análise do desmatamento de biomas brasileiros, com visualização de tendências e insights.",
       category: "bi",
       image: "/api/placeholder/400/250",
-      technologies: ["Power BI", "SQL", "Knime", "Excel"],
+      technologies: ["Power BI", "SQL", "Knime"],
       link: "/projetos/dashboard-vendas",
       github: "https://github.com/beatriz/dashboard-vendas",
       featured: true,
@@ -53,66 +53,40 @@ const Projects = () => {
       id: 2,
       title: "Análise dos Candidatos a Prefeito em São Paulo (2024)",
       description:
-        "Sistema de machine learning para prever cancelamento de assinaturas usando algoritmos de classificação e análise de comportamento.",
-      category: "ml",
+        "Análise estatística dos candidatos a prefeito de São Paulo, incluindo visualização de dados eleitorais e predições de resultados.",
+      category: "estatistica",
       image: "/api/placeholder/400/250",
-      technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
-      link: "/projetos/churn-prediction",
+      technologies: ["Python", "NumPy", "Pandas", "SciPy", "Matplotlib"],
+      link: "/projetos/dashboard-candidatos",
       github: "https://github.com/beatriz/churn-prediction",
       featured: true,
-      tags: ["Python", "Estatística", "Classificação"],
+      tags: ["Python", "Estatística"],
     },
     {
       id: 3,
-      title: "Análise de Sentimento - Redes Sociais",
+      title: "Machine Learning para Classificação e Agrupamento de Sementes",
       description:
-        "Análise de sentimentos de posts em redes sociais usando NLP e visualização de tendências temporais.",
+        "Modelo de machine learning para classificação e agrupamento de sementes com visualização de clusters",
       category: "ml",
       image: "/api/placeholder/400/250",
-      technologies: ["Python", "NLTK", "TensorFlow", "Plotly"],
+      technologies: ["Python", "Scikit-Learn", "TensorFlow", "Plotly"],
       link: "/projetos/sentiment-analysis",
       github: "https://github.com/beatriz/sentiment-analysis",
       featured: false,
-      tags: ["NLP", "Análise de Sentimento", "Redes Sociais"],
+      tags: ["KNN", "K-Means"],
     },
     {
       id: 4,
-      title: "Relatório de Performance de Marketing",
+      title: "Relatório Ad Hoc de Desmatamento de Biomas e Características",
       description:
-        "Relatório automatizado de performance de campanhas de marketing com análise de ROI e otimização de budget.",
+        "DBA de banco de dados para análise ad hoc de desmatamento, incluindo visualização de características dos biomas",
       category: "estatistica",
       image: "/api/placeholder/400/250",
-      technologies: ["R", "Shiny", "ggplot2", "dplyr"],
+      technologies: ["PostgreSQL", "KNIME", "ggplot2", "dplyr"],
       link: "/projetos/marketing-performance",
       github: "https://github.com/beatriz/marketing-performance",
       featured: false,
-      tags: ["Marketing", "ROI", "Análise Estatística"],
-    },
-    {
-      id: 5,
-      title: "Visualização de Dados Climáticos",
-      description:
-        "Dashboard interativo para análise de dados climáticos com gráficos temporais e mapas de calor.",
-      category: "visualizacao",
-      image: "/api/placeholder/400/250",
-      technologies: ["Tableau", "Python", "Folium", "Pandas"],
-      link: "/projetos/climate-data",
-      github: "https://github.com/beatriz/climate-data",
-      featured: false,
-      tags: ["Clima", "Visualização", "Geodados"],
-    },
-    {
-      id: 6,
-      title: "Sistema de Recomendação de Produtos",
-      description:
-        "Algoritmo de recomendação baseado em colaboração e conteúdo para e-commerce.",
-      category: "ml",
-      image: "/api/placeholder/400/250",
-      technologies: ["Python", "Surprise", "NumPy", "Streamlit"],
-      link: "/projetos/recommendation-system",
-      github: "https://github.com/beatriz/recommendation-system",
-      featured: false,
-      tags: ["Recomendação", "E-commerce", "Algoritmos"],
+      tags: ["ETL", "Modelagem de banco de dados"],
     },
   ];
 
@@ -236,7 +210,7 @@ const Projects = () => {
           )}
 
           {/* All Projects Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             {filteredProjects.map((project, index) => (
               <div
                 key={project.id}

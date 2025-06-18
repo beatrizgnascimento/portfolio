@@ -1,4 +1,28 @@
 import { useEffect, useState } from "react";
+import {
+  SiPython,
+  SiJavascript,
+  SiTypescript,
+  SiPostgresql,
+  SiGooglebigquery,
+} from "react-icons/si";
+import { FaDatabase } from "react-icons/fa";
+import { BsFileBarGraphFill } from "react-icons/bs";
+import { SiLooker } from "react-icons/si";
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
+import { SiScikitlearn } from "react-icons/si";
+import { SiPandas } from "react-icons/si";
+import { SiNumpy } from "react-icons/si";
+import { SiScipy } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { GrMysql } from "react-icons/gr";
+import { TbBrandDatabricks } from "react-icons/tb";
+import { SiKnime } from "react-icons/si";
+import { SiApachespark } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
+import { SiJupyter } from "react-icons/si";
+import { RiFileExcel2Fill } from "react-icons/ri";
+import { SiGoogleanalytics } from "react-icons/si";
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,28 +55,22 @@ const Skills = () => {
       skills: [
         {
           name: "Python",
-
-          icon: "fab fa-python",
-          color: "text-catppuccin-blue",
+          icon: <SiPython className="text-catppuccin-blue" size={24} />,
         },
-
         {
           name: "SQL",
           level: 95,
-          icon: "fas fa-database",
-          color: "text-catppuccin-green",
+          icon: <FaDatabase className="text-catppuccin-green" size={24} />,
         },
         {
           name: "JavaScript",
           level: 75,
-          icon: "fab fa-js-square",
-          color: "text-catppuccin-yellow",
+          icon: <SiJavascript className="text-catppuccin-yellow" size={24} />,
         },
         {
           name: "TypeScript",
           level: 80,
-          icon: "fas fa-chart-line",
-          color: "text-catppuccin-mauve",
+          icon: <SiTypescript className="text-catppuccin-blue" size={24} />,
         },
       ],
     },
@@ -62,21 +80,25 @@ const Skills = () => {
         {
           name: "Power BI",
           level: 90,
-          icon: "fas fa-chart-bar",
-          color: "text-catppuccin-yellow",
+          icon: (
+            <BsFileBarGraphFill className="text-catppuccin-yellow" size={24} />
+          ),
         },
 
         {
           name: "Looker Studio",
           level: 80,
-          icon: "fas fa-eye",
-          color: "text-catppuccin-green",
+          icon: <SiLooker className="text-catppuccin-blue" size={24} />,
         },
         {
           name: "Amplitude",
           level: 75,
-          icon: "fas fa-chart-line",
-          color: "text-catppuccin-mauve",
+          icon: (
+            <TbBrandGoogleAnalytics
+              className="text-catppuccin-blue"
+              size={24}
+            />
+          ),
         },
       ],
     },
@@ -86,26 +108,22 @@ const Skills = () => {
         {
           name: "Scikit-learn",
           level: 85,
-          icon: "fas fa-brain",
-          color: "text-catppuccin-orange",
+          icon: <SiScikitlearn className="text-catppuccin-peach" size={24} />,
         },
         {
-          name: "TensorFlow",
+          name: "SciPy",
           level: 70,
-          icon: "fas fa-network-wired",
-          color: "text-catppuccin-red",
+          icon: <SiScipy className="text-catppuccin-blue" size={24} />,
         },
         {
           name: "Pandas",
           level: 95,
-          icon: "fas fa-table",
-          color: "text-catppuccin-blue",
+          icon: <SiPandas className="text-catppuccin-mauve" size={24} />,
         },
         {
           name: "NumPy",
           level: 90,
-          icon: "fas fa-calculator",
-          color: "text-catppuccin-green",
+          icon: <SiNumpy className="text-catppuccin-blue" size={24} />,
         },
       ],
     },
@@ -115,26 +133,24 @@ const Skills = () => {
         {
           name: "PostgreSQL",
           level: 85,
-          icon: "fas fa-server",
-          color: "text-catppuccin-blue",
+          icon: <BiLogoPostgresql className="text-catppuccin-blue" size={25} />,
         },
         {
           name: "BigQuery",
           level: 80,
-          icon: "fas fa-cloud",
-          color: "text-catppuccin-green",
+          icon: <SiGooglebigquery className="text-catppuccin-blue" size={24} />,
         },
         {
           name: "MySQL",
           level: 75,
-          icon: "fab fa-aws",
-          color: "text-catppuccin-orange",
+          icon: <GrMysql className="text-catppuccin-blue" size={24} />,
         },
         {
           name: "Databricks",
           level: 75,
-          icon: "fab fa-aws",
-          color: "text-catppuccin-orange",
+          icon: (
+            <TbBrandDatabricks className="text-catppuccin-peach" size={24} />
+          ),
         },
       ],
     },
@@ -144,14 +160,12 @@ const Skills = () => {
         {
           name: "Knime",
           level: 80,
-          icon: "fas fa-wind",
-          color: "text-catppuccin-teal",
+          icon: <SiKnime className="text-catppuccin-yellow" size={24} />,
         },
         {
-          name: "PySpark",
+          name: "Apache Spark",
           level: 75,
-          icon: "fas fa-cube",
-          color: "text-catppuccin-mauve",
+          icon: <SiApachespark className="text-catppuccin-peach" size={24} />,
         },
       ],
     },
@@ -161,26 +175,26 @@ const Skills = () => {
         {
           name: "Git",
           level: 85,
-          icon: "fab fa-git-alt",
-          color: "text-catppuccin-red",
+          icon: <FaGitAlt className="text-catppuccin-red" size={24} />,
         },
         {
           name: "Jupyter",
           level: 90,
-          icon: "fas fa-book",
-          color: "text-catppuccin-yellow",
+          icon: <SiJupyter className="text-catppuccin-peach" size={24} />,
         },
         {
           name: "Excel",
           level: 95,
-          icon: "fas fa-file-excel",
-          color: "text-catppuccin-green",
+          icon: (
+            <RiFileExcel2Fill className="text-catppuccin-green" size={24} />
+          ),
         },
         {
           name: "Google Analytics",
           level: 80,
-          icon: "fas fa-chart-area",
-          color: "text-catppuccin-blue",
+          icon: (
+            <SiGoogleanalytics className="text-catppuccin-yellow" size={24} />
+          ),
         },
       ],
     },
@@ -224,9 +238,7 @@ const Skills = () => {
                     <div key={skillIndex} className="space-y-2">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-3">
-                          <i
-                            className={`${skill.icon} ${skill.color} text-lg`}
-                          ></i>
+                          <span>{skill.icon}</span>
                           <span className="text-catppuccin-subtext1 font-medium">
                             {skill.name}
                           </span>
@@ -270,48 +282,6 @@ const Skills = () => {
           </div>
 
           {/* Learning Section */}
-          <div className="mt-16 text-center">
-            <h3 className="text-2xl font-semibold text-catppuccin-text mb-4">
-              Sempre Aprendendo
-            </h3>
-            <p className="text-catppuccin-subtext0 mb-6">
-              Atualmente explorando novas tecnologias e metodologias
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              {[
-                {
-                  name: "Apache Kafka",
-                  icon: "fas fa-stream",
-                  color: "text-catppuccin-red",
-                },
-                {
-                  name: "Kubernetes",
-                  icon: "fas fa-dharmachakra",
-                  color: "text-catppuccin-blue",
-                },
-                {
-                  name: "GraphQL",
-                  icon: "fas fa-project-diagram",
-                  color: "text-catppuccin-mauve",
-                },
-                {
-                  name: "Rust",
-                  icon: "fas fa-cog",
-                  color: "text-catppuccin-orange",
-                },
-              ].map((tech, index) => (
-                <div
-                  key={index}
-                  className="flex items-center space-x-2 px-4 py-2 bg-catppuccin-surface0 rounded-full border border-catppuccin-surface1"
-                >
-                  <i className={`${tech.icon} ${tech.color}`}></i>
-                  <span className="text-catppuccin-subtext1 text-sm">
-                    {tech.name}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>

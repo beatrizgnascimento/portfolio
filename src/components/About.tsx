@@ -237,9 +237,24 @@ const About = () => {
                   Jan 2024 - Nov 2024
                 </p>
                 <ul className="list-disc list-inside text-catppuccin-subtext0 text-sm space-y-1">
-                  <li>Criação de relatórios automatizados para diretoria</li>
-                  <li>Suporte na modelagem de dados e integração de fontes</li>
-                  <li>Participação em projetos de análise preditiva</li>
+                  <li>
+                    Quebrou recordes de captação de leads, atingindo 130 leads
+                    em uma única semana durante a Semana da Prospecção,
+                    conduzindo reuniões estratégicas e fortalecendo o processo
+                    de vendas;
+                  </li>
+
+                  <li>
+                    PO em projetos de tecnologia, liderando o desenvolvimento de
+                    soluções alinhadas às necessidades do negócio e priorização
+                    de demandas
+                  </li>
+                  <li>
+                    Diagnóstico e resolução de gargalos no processo de vendas,
+                    implementando estratégias eficazes de abordagem e
+                    qualificação de leads, resultando no aumento da taxa de
+                    conversão
+                  </li>
                 </ul>
               </div>
             </div>
