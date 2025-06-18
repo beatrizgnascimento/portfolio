@@ -29,6 +29,7 @@ const Projects = () => {
   const categories = [
     { id: "todos", name: "Todos", icon: "fas fa-th" },
     { id: "visualizacao", name: "Visualização", icon: "fas fa-chart-bar" },
+    { id: "bd", name: "Banco de Dados", icon: "fas fa-database" },
     { id: "ml", name: "Machine Learning", icon: "fas fa-brain" },
     { id: "estatistica", name: "Estatística", icon: "fas fa-calculator" },
     { id: "bi", name: "Business Intelligence", icon: "fas fa-chart-line" },

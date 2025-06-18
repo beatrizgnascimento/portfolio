@@ -134,12 +134,12 @@ const About = () => {
 
           {/* Education & Certifications */}
           <div className="mt-16 grid md:grid-cols-2 gap-8">
-            <div className="bg-catppuccin-surface0 p-6 rounded-lg">
+            <div className="bg-catppuccin-surface0 p-6 rounded-lg ">
               <h4 className="text-xl font-semibold text-catppuccin-text mb-4 flex items-center">
                 <i className="fas fa-graduation-cap text-catppuccin-green mr-3"></i>
                 Formação
               </h4>
-              <div className="space-y-3 text-center">
+              <div className="space-y-3 mt-8">
                 <div className="mb-3">
                   <h5 className="font-medium text-catppuccin-subtext1">
                     Sistemas de Informação
@@ -156,29 +156,35 @@ const About = () => {
                 <i className="fas fa-certificate text-catppuccin-yellow mr-3"></i>
                 Certificações
               </h4>
-              <div className="space-y-3 text-center">
+              <div className="space-y-3">
                 <div>
                   <h5 className="font-medium text-catppuccin-subtext1">
-                    Google Data Analytics
+                    <a
+                      href="https://cert.efset.org/hzGvwE"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-catppuccin-blue underline hover:text-catppuccin-lavender transition-colors"
+                    >
+                      EFSET English Certificate (C2 Proficient)
+                    </a>
                   </h5>
                   <p className="text-sm text-catppuccin-subtext0">
-                    Google - 2023
+                    EF SET - 2023
                   </p>
                 </div>
                 <div>
                   <h5 className="font-medium text-catppuccin-subtext1">
-                    Microsoft Power BI
+                    <a
+                      href="https://drive.google.com/file/d/1bnFfWWnA4USR2sGC7Apt6k98JjBXe4d1/view"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-catppuccin-blue underline hover:text-catppuccin-lavender transition-colors"
+                    >
+                      DELE - International Spanish Certificate
+                    </a>
                   </h5>
                   <p className="text-sm text-catppuccin-subtext0">
-                    Microsoft - 2023
-                  </p>
-                </div>
-                <div>
-                  <h5 className="font-medium text-catppuccin-subtext1">
-                    Python for Data Science
-                  </h5>
-                  <p className="text-sm text-catppuccin-subtext0">
-                    Coursera - 2022
+                    Instituto Cervantes - 2019
                   </p>
                 </div>
               </div>
@@ -194,28 +200,41 @@ const About = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-catppuccin-surface0 p-6 rounded-lg">
                 <h5 className="text-lg font-semibold text-catppuccin-text mb-2">
-                  Analista de Dados Jr.
+                  Analista de Dados & QA
                 </h5>
-                <p className="text-catppuccin-subtext1 mb-1">Empresa XPTO</p>
+                <p className="text-catppuccin-subtext1 mb-1">
+                  NexAtlas - Navegação Aérea
+                </p>
                 <p className="text-catppuccin-subtext0 text-sm mb-2">
-                  Jan 2023 - Atual
+                  Jan 2024 - Atual
                 </p>
                 <ul className="list-disc list-inside text-catppuccin-subtext0 text-sm space-y-1">
                   <li>
-                    Desenvolvimento de dashboards em Power BI para áreas de
-                    vendas e marketing
+                    Única profissional de dados, responsável por estruturar e
+                    implementar uma cultura data-driven do zero
                   </li>
-                  <li>Automação de relatórios e ETL com Python e SQL</li>
-                  <li>Análise de dados para tomada de decisão estratégica</li>
+
+                  <li>SQL, Google Sheets, Amplitude, Looker Studio</li>
+
+                  <li>
+                    Atuação como ponte entre dados, engenharia, growth e
+                    marketing
+                  </li>
+                  <li>
+                    Análise de métricas de produto, growth e performance de
+                    campanhas
+                  </li>
                 </ul>
               </div>
               <div className="bg-catppuccin-surface0 p-6 rounded-lg">
                 <h5 className="text-lg font-semibold text-catppuccin-text mb-2">
-                  Estagiária em Business Intelligence
+                  Assessora de Vendas e Product Owner
                 </h5>
-                <p className="text-catppuccin-subtext1 mb-1">Tech Solutions</p>
+                <p className="text-catppuccin-subtext1 mb-1">
+                  byron.solutions - Empresa Júnior de T.I
+                </p>
                 <p className="text-catppuccin-subtext0 text-sm mb-2">
-                  Jul 2022 - Dez 2022
+                  Jan 2024 - Nov 2024
                 </p>
                 <ul className="list-disc list-inside text-catppuccin-subtext0 text-sm space-y-1">
                   <li>Criação de relatórios automatizados para diretoria</li>

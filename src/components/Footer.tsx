@@ -117,7 +117,10 @@ const Footer = () => {
         <div className="border-t border-catppuccin-surface0 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-catppuccin-subtext0 text-sm">
-              <p>© {currentYear} Beatriz. Todos os direitos reservados.</p>
+              <p>
+                © {currentYear} Beatriz Nascimento. Todos os direitos
+                reservados.
+              </p>
             </div>
           </div>
         </div>
