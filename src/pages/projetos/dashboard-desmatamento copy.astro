@@ -1,0 +1,270 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+---
+
+<Layout title="Desmatamento de Biomas e PIB">
+  <Navbar client:load />
+  
+  <main class="pt-16 bg-catppuccin-base min-h-screen">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Breadcrumb -->
+      <nav class="mb-8">
+        <ol class="flex items-center space-x-2 text-catppuccin-subtext0">
+          <li><a href="/" class="hover:text-catppuccin-lavender transition-colors">Início</a></li>
+          <li><i class="fas fa-chevron-right text-xs"></i></li>
+          <li><a href="/#projetos" class="hover:text-catppuccin-lavender transition-colors">Projetos</a></li>
+          <li><i class="fas fa-chevron-right text-xs"></i></li>
+          <li class="text-catppuccin-text">Desmatamento de Biomas e PIB</li>
+        </ol>
+      </nav>
+
+      <!-- Project Header -->
+      <header class="mb-12">
+        <div class="bg-catppuccin-surface0 rounded-lg p-8 mb-8">
+          <h1 class="text-4xl font-bold text-catppuccin-lavender mb-4">
+            Desmatamento de Biomas e PIB
+          </h1>
+          <p class="text-lg text-catppuccin-subtext0 mb-6">
+            Dashboard interativo que analisa o desmatamento de biomas brasileiros e sua relação com o PIB nos anos de 2013 a 2022.
+          </p>
+          
+          <div class="flex flex-wrap gap-4 mb-6">
+            
+           
+            <span class="bg-catppuccin-yellow text-catppuccin-base px-3 py-1 rounded-full text-sm font-medium">
+              KNIME
+            </span>
+            <span class="bg-catppuccin-peach text-catppuccin-base px-3 py-1 rounded-full text-sm font-medium">
+              PowerBI
+            </span>
+            <span class="bg-catppuccin-mauve text-catppuccin-base px-3 py-1 rounded-full text-sm font-medium">
+              Power Query
+            </span>
+            <span class="bg-catppuccin-blue text-catppuccin-base px-3 py-1 rounded-full text-sm font-medium">
+              PostgreSQL
+            </span>
+            
+          </div>
+
+          <div class="flex flex-wrap gap-4">
+            <a 
+              href="https://app.powerbi.com/view?r=eyJrIjoiNDI5NjJlY2QtNGIwZi00NWE1LWE0NWUtMGUzZjFjOWQxMDNiIiwidCI6ImFkYWMzNzYyLWYzMWQtNDliNS1iYWI1LWY3NjcxNzZmZjQyNSJ9" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="flex items-center space-x-2 bg-catppuccin-surface1 text-catppuccin-text px-4 py-2 rounded-lg hover:bg-catppuccin-surface2 transition-colors"
+            >
+                <i class="devicon-powerbi-plain colored text-xl"></i>
+              <span>Ver Dashboard</span>
+            </a>
+            
+          </div>
+        </div>
+      </header>
+
+      <!-- Project Content -->
+      <div class="space-y-12">
+        <!-- Overview -->
+        <section>
+          <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Visão Geral</h2>
+          <div class="bg-catppuccin-surface0 rounded-lg p-6">
+            <p class="text-catppuccin-subtext0 leading-relaxed mb-4">
+              Este projeto foi desenvolvido para a disciplina Introdução à Análise de Dados, na Universidade Federal de Itajubá,
+              com o objetivo de analisar o desmatamento de biomas brasileiros e sua relação com o PIB.
+            </p>
+            <p class="text-catppuccin-subtext0 leading-relaxed">
+              O objetivo principal era criar uma visualização que permitisse explorar o impacto do desmatamento no PIB dos biomas brasileiros,
+              utilizando dados de desmatamento e PIB agropecuário e extrativista de 2013 a 2022. O projeto envolveu a coleta, limpeza e análise dos dados,
+              além do desenvolvimento de um dashboard interativo no Power BI.
+            </p>
+          </div>
+        </section>
+
+        <!-- Objectives -->
+        <section>
+          <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Objetivos</h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-catppuccin-surface0 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-catppuccin-text mb-4 flex items-center">
+                <i class="fas fa-bullseye text-catppuccin-mauve mr-3"></i>
+                Principais Metas
+              </h3>
+              <ul class="space-y-2 text-catppuccin-subtext0">
+                <li>• Dashboard interativo para diferentes tipos de usuários</li>
+                <li>• Relacionar PIB e desmatamento de biomas</li>
+                <li>• Monitorar a saúde dos biomas e da economia</li>
+              </ul>
+            </div>
+            <div class="bg-catppuccin-surface0 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-catppuccin-text mb-4 flex items-center">
+                <i class="fas fa-chart-line text-catppuccin-blue mr-3"></i>
+                KPIs Monitorados
+              </h3>
+              <ul class="space-y-2 text-catppuccin-subtext0">
+                <li>• Eficiência - Monitorar o valor do PIB por hectare desmatado</li>
+                <li>• Pressão do desmatamento - Monitorar o quanto ainda há de vegetação nativa</li>
+      
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Implementation -->
+        <section>
+          <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Implementação</h2>
+          
+          <!-- Data Pipeline -->
+          <div class="bg-catppuccin-surface0 rounded-lg p-6 mb-6">
+            <h3 class="text-xl font-semibold text-catppuccin-text mb-4">Pipeline de Dados</h3>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-8 h-8 bg-catppuccin-green rounded-full flex items-center justify-center text-catppuccin-base text-sm font-bold">
+                  1
+                </div>
+                <div>
+                  <h4 class="font-medium text-catppuccin-text">Extração de Dados</h4>
+                  <p class="text-catppuccin-subtext0 text-sm">
+                    Conexão com APIs do TerraBrasilis, IBGE, BDIA, bem como o uso de arquivos CSV do IpeaData
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-8 h-8 bg-catppuccin-blue rounded-full flex items-center justify-center text-catppuccin-base text-sm font-bold">
+                  2
+                </div>
+                <div>
+                  <h4 class="font-medium text-catppuccin-text">Transformação e Limpeza</h4>
+                  <p class="text-catppuccin-subtext0 text-sm">
+                    Limpeza de dados, tratamento de valores nulos, padronização de formatos e relações criadas usando o KNIME
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-8 h-8 bg-catppuccin-mauve rounded-full flex items-center justify-center text-catppuccin-base text-sm font-bold">
+                  3
+                </div>
+                <div>
+                  <h4 class="font-medium text-catppuccin-text">Modelagem de Dados</h4>
+                  <p class="text-catppuccin-subtext0 text-sm">
+                    Modelagem relacional no PostgreSQL, inserção de dados transformados e criação de tabelas 
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-8 h-8 bg-catppuccin-yellow rounded-full flex items-center justify-center text-catppuccin-base text-sm font-bold">
+                  4
+                </div>
+                <div>
+                  <h4 class="font-medium text-catppuccin-text">Visualização</h4>
+                  <p class="text-catppuccin-subtext0 text-sm">
+                    Uso do Power BI para criar dashboards interativos, gráficos e relatórios a partir dos dados modelados e extraídos
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Features -->
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-catppuccin-surface0 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-catppuccin-text mb-4">Funcionalidades Principais</h3>
+              <ul class="space-y-2 text-catppuccin-subtext0">
+                <li>• Visão geral do desmatamento de biomas</li>
+                <li>• Visão geral do PIB agropecuário e extrativista dos biomas</li>
+                <li>• Relação do PIB com desmatamento</li>
+                <li>• Implementação de KPIs de monitoramento</li>
+               
+              </ul>
+            </div>
+            <div class="bg-catppuccin-surface0 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-catppuccin-text mb-4">Tecnologias Utilizadas</h3>
+              <ul class="space-y-2 text-catppuccin-subtext0">
+                <li>• <span class="text-catppuccin-peach">Power BI</span> - Visualização e dashboards</li>
+                <li>• <span class="text-catppuccin-yellow">KNIME</span> - ETL</li>
+                <li>• <span class="text-catppuccin-blue">PostgreSQL</span> - Banco de dados</li>
+                <li>• <span class="text-catppuccin-teal">DAX</span> - Cálculos e métricas</li>
+                <li>• <span class="text-catppuccin-mauve">Power Query</span> - ETL</li>
+             
+              </ul>
+            </div>
+          </div>
+        </section>
+
+       
+
+        <!-- Challenges -->
+        <section>
+          <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Desafios e Soluções</h2>
+          <div class="space-y-4">
+            <div class="bg-catppuccin-surface0 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-catppuccin-text mb-3">Desafio: APIs nada documentadas</h3>
+              <p class="text-catppuccin-subtext0 mb-3">
+                Usar a API do Terra Brasilis foi um grande desafio, isso porque ela não era documentada. Descobri que ela existia revirando a página do TerraBrasilis, quando eu fazia o download de um CSV o site fazia uma requisição a uma API, então foi necessário fazer uma engenharia reversa para entender os campos do .json retornados pela API e verificar esses dados de acordo com os dashboards presentes no site da mesma.
+              </p>
+              <p class="text-catppuccin-subtext0">
+                <strong>Solução:</strong> Engenharia reversa e testes de qualidade para garantir a integridade dos dados.
+              </p>
+            </div>
+            <div class="bg-catppuccin-surface0 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-catppuccin-text mb-3">Desafio: Relacionamento de diferentes fontes de dados</h3>
+              <p class="text-catppuccin-subtext0 mb-3">
+                O volume de dados era alto e as fontes eram diversas, o que tornava difícil relacionar as informações de forma eficiente. Um estado pode conter vários biomas, o que exigia uma modelagem cuidadosa para evitar redundâncias e garantir a integridade referencial.
+              </p>
+              <p class="text-catppuccin-subtext0">
+                <strong>Solução:</strong> Relacionar os dados de desmatamento e PIB por ano e estado, utilizando chaves primárias e estrangeiras para garantir a integridade dos dados e os dados do CSV. A modelagem foi feita no PostgreSQL, onde criei tabelas específicas para cada bioma e suas relações com os estados.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Lessons Learned -->
+        <section>
+          <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Aprendizados</h2>
+          <div class="bg-catppuccin-surface0 rounded-lg p-6">
+            <ul class="space-y-3 text-catppuccin-subtext0">
+              <li class="flex items-start space-x-3">
+                <i class="fas fa-check text-catppuccin-green mt-1"></i>
+                <span>A importância de garantir a qualidade dos dados extraídos para evitar erros</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fas fa-check text-catppuccin-green mt-1"></i>
+                <span>Como otimizar consultas DAX para melhor performance em grandes volumes de dados</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fas fa-check text-catppuccin-green mt-1"></i>
+                <span>A necessidade de criar dashboards intuitivos que atendam diferentes níveis de usuários</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fas fa-check text-catppuccin-green mt-1"></i>
+                <span>Engenharia Reversa</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- Navigation -->
+      <div class="mt-12 pt-8 border-t border-catppuccin-surface0">
+        <div class="flex justify-between items-center">
+          <a 
+            href="/#projetos" 
+            class="flex items-center space-x-2 text-catppuccin-subtext1 hover:text-catppuccin-lavender transition-colors"
+          >
+            <i class="fas fa-arrow-left"></i>
+            <span>Voltar aos Projetos</span>
+          </a>
+          <a 
+            href="/#contato" 
+            class="flex items-center space-x-2 bg-gradient-to-r from-catppuccin-mauve to-catppuccin-blue text-catppuccin-base px-6 py-3 rounded-lg hover:shadow-lg transition-all"
+          >
+            <span>Próximo Projeto</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <Footer client:load />
+</Layout> 

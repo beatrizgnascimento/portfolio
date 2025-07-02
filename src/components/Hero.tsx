@@ -34,6 +34,28 @@ const Hero = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
+          {/* Profile Photo */}
+          <div className="mb-8 animate-fade-in">
+            <div className="w-32 h-32 md:w-48 md:h-48 mx-auto rounded-full bg-gradient-to-br from-catppuccin-mauve to-catppuccin-blue p-1 shadow-lg">
+              <div className="w-full h-full rounded-full bg-catppuccin-surface0 flex items-center justify-center overflow-hidden">
+                {/* 
+                  Para adicionar sua foto:
+                  1. Coloque sua foto na pasta public/images/ (ex: public/images/beatriz.jpg)
+                  2. Descomente a tag <img> abaixo e comente o div placeholder
+                  3. Ajuste o nome do arquivo conforme necessário
+                */}
+
+                {
+                  <img
+                    src="/images/image.png"
+                    alt="Beatriz Nascimento"
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                }
+              </div>
+            </div>
+          </div>
+
           {/* Greeting */}
           <p className="text-catppuccin-mauve font-mono text-lg mb-4 animate-fade-in">
             Olá, eu sou a
@@ -41,7 +63,7 @@ const Hero = () => {
 
           {/* Name */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
-            <span className="text-catppuccin-lavender">Beatriz</span>
+            <span className="text-catppuccin-lavender">Beatriz Nascimento</span>
           </h1>
 
           {/* Title */}

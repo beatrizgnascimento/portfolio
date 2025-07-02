@@ -28,7 +28,6 @@ const Projects = () => {
 
   const categories = [
     { id: "todos", name: "Todos", icon: "fas fa-th" },
-    { id: "visualizacao", name: "Visualização", icon: "fas fa-chart-bar" },
     { id: "bd", name: "Banco de Dados", icon: "fas fa-database" },
     { id: "ml", name: "Machine Learning", icon: "fas fa-brain" },
     { id: "estatistica", name: "Estatística", icon: "fas fa-calculator" },
@@ -40,13 +39,14 @@ const Projects = () => {
       id: 1,
       title: "Dashboard de Análise de Desmatamento de Biomas",
       description:
-        "Dashboard interativo para análise do desmatamento de biomas brasileiros, com visualização de tendências e insights.",
+        "Dashboard interativo para análise do desmatamento de biomas brasileiros e PIB, com visualização de tendências e insights.",
       category: "bi",
       image: "/api/placeholder/400/250",
-      technologies: ["Power BI", "SQL", "Knime"],
-      link: "/projetos/dashboard-vendas",
-      github: "https://github.com/beatriz/dashboard-vendas",
-      featured: true,
+      technologies: ["PowerBI", "SQL", "Knime"],
+      link: "/projetos/dashboard-desmatamento",
+      github:
+        "https://app.powerbi.com/view?r=eyJrIjoiNDI5NjJlY2QtNGIwZi00NWE1LWE0NWUtMGUzZjFjOWQxMDNiIiwidCI6ImFkYWMzNzYyLWYzMWQtNDliNS1iYWI1LWY3NjcxNzZmZjQyNSJ9",
+      featured: false,
       tags: ["Dashboard", "Meio Ambiente"],
     },
     {
@@ -57,9 +57,9 @@ const Projects = () => {
       category: "estatistica",
       image: "/api/placeholder/400/250",
       technologies: ["Python", "NumPy", "Pandas", "SciPy", "Matplotlib"],
-      link: "/projetos/dashboard-candidatos",
-      github: "https://github.com/beatriz/churn-prediction",
-      featured: true,
+      link: "/projetos/analise-candidatos",
+      github: "https://github.com/beatrizgnascimento/candidatos-sp",
+      featured: false,
       tags: ["Python", "Estatística"],
     },
     {
@@ -69,24 +69,37 @@ const Projects = () => {
         "Modelo de machine learning para classificação e agrupamento de sementes com visualização de clusters",
       category: "ml",
       image: "/api/placeholder/400/250",
-      technologies: ["Python", "Scikit-Learn", "TensorFlow", "Plotly"],
-      link: "/projetos/sentiment-analysis",
-      github: "https://github.com/beatriz/sentiment-analysis",
+      technologies: ["Python", "Scikit-Learn"],
+      link: "/projetos/machine-learning-sementes",
+      github: "https://github.com/beatrizgnascimento/trabalho-ML",
       featured: false,
       tags: ["KNN", "K-Means"],
     },
     {
       id: 4,
-      title: "Relatório Ad Hoc de Desmatamento de Biomas e Características",
+      title:
+        "Relatório Ad Hoc de Desmatamento de Biomas e suas características",
       description:
-        "DBA de banco de dados para análise ad hoc de desmatamento, incluindo visualização de características dos biomas",
-      category: "estatistica",
+        "DBA de banco de dados para a criação de uma aplicação Ad Hoc sobre desmatamento",
+      category: "bd",
       image: "/api/placeholder/400/250",
-      technologies: ["PostgreSQL", "KNIME", "ggplot2", "dplyr"],
-      link: "/projetos/marketing-performance",
-      github: "https://github.com/beatriz/marketing-performance",
+      technologies: ["PostgreSQL", "KNIME"],
+      link: "/projetos/adhoc-desmatamento",
       featured: false,
       tags: ["ETL", "Modelagem de banco de dados"],
+    },
+    {
+      id: 5,
+      title: "Análise de Estratégias de Taxas de Comissionamento - iFood",
+      description:
+        "Projeções para otimização de taxas de comissão em clientes parceiros",
+      category: "bi",
+      image: "/api/placeholder/400/250",
+      technologies: ["Python", "Pandas", "Matplotlib"],
+      link: "/projetos/case_logistica",
+      github: "https://github.com/beatrizgnascimento/case_logistica",
+      featured: false,
+      tags: ["Jupyter", "Projeções"],
     },
   ];
 
@@ -110,8 +123,9 @@ const Projects = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-catppuccin-mauve to-catppuccin-blue mx-auto rounded-full mb-6"></div>
             <p className="text-lg text-catppuccin-subtext0 max-w-3xl mx-auto">
-              Projetos que demonstram minha expertise em análise de dados,
-              machine learning e business intelligence
+              Projetos que demonstram minha experiência em análise de dados,
+              business intelligence, banco de dados, estatística e machine
+              learning.
             </p>
           </div>
 
@@ -132,82 +146,6 @@ const Projects = () => {
               </button>
             ))}
           </div>
-
-          {/* Featured Projects */}
-          {selectedCategory === "todos" && (
-            <div className="mb-16">
-              <h3 className="text-2xl font-semibold text-catppuccin-text mb-8 text-center">
-                Projetos em Destaque
-              </h3>
-              <div className="grid lg:grid-cols-2 gap-8">
-                {projects
-                  .filter((p) => p.featured)
-                  .map((project) => (
-                    <div
-                      key={project.id}
-                      className="bg-catppuccin-surface0 rounded-lg overflow-hidden hover:bg-catppuccin-surface1 transition-all duration-300 group"
-                    >
-                      <div className="relative h-48 bg-gradient-to-br from-catppuccin-mauve/20 to-catppuccin-blue/20 flex items-center justify-center">
-                        <i className="fas fa-chart-line text-6xl text-catppuccin-mauve/30"></i>
-                        <div className="absolute top-4 right-4">
-                          <span className="bg-catppuccin-mauve text-catppuccin-base px-2 py-1 rounded-full text-xs font-medium">
-                            Destaque
-                          </span>
-                        </div>
-                      </div>
-                      <div className="p-6">
-                        <h4 className="text-xl font-semibold text-catppuccin-text mb-3 group-hover:text-catppuccin-lavender transition-colors">
-                          {project.title}
-                        </h4>
-                        <p className="text-catppuccin-subtext0 mb-4 leading-relaxed">
-                          {project.description}
-                        </p>
-                        <div className="flex flex-wrap gap-2 mb-4">
-                          {project.tags.map((tag, index) => (
-                            <span
-                              key={index}
-                              className="bg-catppuccin-surface1 text-catppuccin-subtext1 px-3 py-1 rounded-full text-xs"
-                            >
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                        <div className="flex items-center justify-between">
-                          <div className="flex space-x-2">
-                            {project.technologies
-                              .slice(0, 3)
-                              .map((tech, index) => (
-                                <span
-                                  key={index}
-                                  className="text-catppuccin-blue text-sm font-mono"
-                                >
-                                  {tech}
-                                </span>
-                              ))}
-                          </div>
-                          <div className="flex space-x-3">
-                            <a
-                              href={project.link}
-                              className="text-catppuccin-lavender hover:text-catppuccin-mauve transition-colors"
-                            >
-                              <i className="fas fa-external-link-alt"></i>
-                            </a>
-                            <a
-                              href={project.github}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-catppuccin-subtext1 hover:text-catppuccin-mauve transition-colors"
-                            >
-                              <i className="fab fa-github"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-              </div>
-            </div>
-          )}
 
           {/* All Projects Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -261,27 +199,28 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         className="text-catppuccin-subtext1 hover:text-catppuccin-mauve transition-colors"
                       >
-                        <i className="fab fa-github"></i>
+                        {project.technologies.includes("PowerBI") ? (
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 32 32"
+                            fill="currentColor"
+                          >
+                            <rect x="2" y="18" width="4" height="10" rx="1" />
+                            <rect x="8" y="12" width="4" height="16" rx="1" />
+                            <rect x="14" y="8" width="4" height="20" rx="1" />
+                            <rect x="20" y="4" width="4" height="24" rx="1" />
+                            <rect x="26" y="14" width="4" height="14" rx="1" />
+                          </svg>
+                        ) : (
+                          <i className="fab fa-github"></i>
+                        )}
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Call to Action */}
-          <div className="text-center mt-16">
-            <p className="text-catppuccin-subtext0 mb-6">
-              Interessado em ver mais detalhes sobre algum projeto específico?
-            </p>
-            <a
-              href="#contato"
-              className="inline-flex items-center space-x-2 bg-gradient-to-r from-catppuccin-mauve to-catppuccin-blue text-catppuccin-base px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-catppuccin-mauve/25 transition-all duration-300 transform hover:scale-105"
-            >
-              <span>Vamos Conversar</span>
-              <i className="fas fa-arrow-right"></i>
-            </a>
           </div>
         </div>
       </div>

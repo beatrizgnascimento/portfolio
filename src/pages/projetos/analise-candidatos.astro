@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 ---
 
-<Layout title="Dashboard de Vendas E-commerce - Beatriz">
+<Layout title="Análise dos candidatos a prefeiruta de SP (2024) - Beatriz">
   <Navbar client:load />
   
   <main class="pt-16 bg-catppuccin-base min-h-screen">
@@ -55,7 +55,7 @@ import Footer from '../../components/Footer';
 
           <div class="flex flex-wrap gap-4">
             <a 
-              href="https://github.com/beatriz/dashboard-vendas" 
+              href="https://github.com/beatrizgnascimento/candidatos-sp" 
               target="_blank" 
               rel="noopener noreferrer"
               class="flex items-center space-x-2 bg-catppuccin-surface1 text-catppuccin-text px-4 py-2 rounded-lg hover:bg-catppuccin-surface2 transition-colors"
@@ -90,29 +90,27 @@ import Footer from '../../components/Footer';
         <!-- Objectives -->
         <section>
           <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Objetivos</h2>
-          <div class="grid md:grid-cols-2 gap-6">
+          <div class="grid md:grid-cols-1 gap-6">
             <div class="bg-catppuccin-surface0 rounded-lg p-6">
               <h3 class="text-lg font-semibold text-catppuccin-text mb-4 flex items-center">
-                <i class="fas fa-bullseye text-catppuccin-mauve mr-3"></i>
-                Principais Metas
-              </h3>
-              <ul class="space-y-2 text-catppuccin-subtext0">
-                <li>• Aumentar a taxa de conversão em 15%</li>
-                <li>• Reduzir o custo de aquisição de clientes</li>
-                <li>• Melhorar a retenção de clientes</li>
-                <li>• Otimizar campanhas de marketing</li>
-              </ul>
-            </div>
+                
+              
             <div class="bg-catppuccin-surface0 rounded-lg p-6">
               <h3 class="text-lg font-semibold text-catppuccin-text mb-4 flex items-center">
                 <i class="fas fa-chart-line text-catppuccin-blue mr-3"></i>
-                KPIs Monitorados
+                Análises realizadas
               </h3>
               <ul class="space-y-2 text-catppuccin-subtext0">
-                <li>• Receita total e crescimento</li>
-                <li>• Taxa de conversão por canal</li>
-                <li>• Valor médio do pedido</li>
-                <li>• Lifetime Value dos clientes</li>
+                <li>• Raça (branca, parda, preta, amarela, indígena)</li>
+                <li>• Número de candidatos por partido</li>
+                <li>• Idade dos candidatos</li>
+                <li>• Patrimônio em reais (partidos e candidatos)</li>
+                <li>• Número de candidatos por posicionamento político ao longo do tempo
+</li>
+                <li>• Número de candidatos eleitos por posicionamento político ao longo do tempo</li>
+                <li>• Divisão de cor e raça por posicionamento político</li>
+                <li>• Divisão de gênero por posicionamento político</li>
+
               </ul>
             </div>
           </div>
@@ -133,8 +131,9 @@ import Footer from '../../components/Footer';
                 <div>
                   <h4 class="font-medium text-catppuccin-text">Extração de Dados</h4>
                   <p class="text-catppuccin-subtext0 text-sm">
-                    Conexão com APIs do e-commerce, Google Analytics e CRM para extrair dados de vendas, 
-                    comportamento do usuário e informações de clientes.
+                    Extração dos dados de candidatos a partir de fontes públicas, 
+                    como o Tribunal Regional Eleitoral de São Paulo (TRE-SP) e outras bases de dados
+                    relevantes em formato CSV.
                   </p>
                 </div>
               </div>
@@ -145,32 +144,19 @@ import Footer from '../../components/Footer';
                 <div>
                   <h4 class="font-medium text-catppuccin-text">Transformação e Limpeza</h4>
                   <p class="text-catppuccin-subtext0 text-sm">
-                    Limpeza de dados, tratamento de valores nulos, padronização de formatos e criação 
-                    de métricas calculadas usando SQL e DAX.
+                    Limpeza de dados, tratamento de valores nulos e padronização de formatos.
                   </p>
                 </div>
               </div>
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0 w-8 h-8 bg-catppuccin-mauve rounded-full flex items-center justify-center text-catppuccin-base text-sm font-bold">
-                  3
-                </div>
-                <div>
-                  <h4 class="font-medium text-catppuccin-text">Modelagem de Dados</h4>
-                  <p class="text-catppuccin-subtext0 text-sm">
-                    Criação de modelo dimensional com fatos de vendas, dimensões de tempo, produtos, 
-                    clientes e canais de marketing.
-                  </p>
-                </div>
-              </div>
+              
               <div class="flex items-start space-x-4">
                 <div class="flex-shrink-0 w-8 h-8 bg-catppuccin-yellow rounded-full flex items-center justify-center text-catppuccin-base text-sm font-bold">
-                  4
+                  3
                 </div>
                 <div>
                   <h4 class="font-medium text-catppuccin-text">Visualização</h4>
                   <p class="text-catppuccin-subtext0 text-sm">
-                    Desenvolvimento de dashboards interativos no Power BI com filtros dinâmicos, 
-                    drill-down capabilities e alertas automáticos.
+                    Desenvolvimento de gráficos, visualizações e análises estatísticas.
                   </p>
                 </div>
               </div>
@@ -182,45 +168,29 @@ import Footer from '../../components/Footer';
             <div class="bg-catppuccin-surface0 rounded-lg p-6">
               <h3 class="text-lg font-semibold text-catppuccin-text mb-4">Funcionalidades Principais</h3>
               <ul class="space-y-2 text-catppuccin-subtext0">
-                <li>• Dashboard executivo com KPIs principais</li>
-                <li>• Análise de funil de conversão</li>
-                <li>• Segmentação de clientes</li>
-                <li>• Análise de produtos mais vendidos</li>
-                <li>• Performance por canal de marketing</li>
-                <li>• Previsões de demanda</li>
+                <li>• Distribuição normal da idade dos candidatos</li>
+                <li>• Partidos com mais candidaturas</li>
+                <li>• Número de eleitos em SP por posicionamento político ao longo do tempo</li>
+                <li>• Divisão de cor/raça e gênero por posicionamento político</li>
+                <li>• Top 10 candidatos com maior patrimônio</li>
+                <li>• Top 15 partidos com maior patrimônio</li>
               </ul>
             </div>
             <div class="bg-catppuccin-surface0 rounded-lg p-6">
               <h3 class="text-lg font-semibold text-catppuccin-text mb-4">Tecnologias Utilizadas</h3>
               <ul class="space-y-2 text-catppuccin-subtext0">
-                <li>• <span class="text-catppuccin-blue">Power BI</span> - Visualização e dashboards</li>
-                <li>• <span class="text-catppuccin-green">SQL Server</span> - Banco de dados</li>
-                <li>• <span class="text-catppuccin-yellow">DAX</span> - Cálculos e métricas</li>
-                <li>• <span class="text-catppuccin-mauve">Power Query</span> - ETL</li>
-                <li>• <span class="text-catppuccin-teal">Power Automate</span> - Automação</li>
+                <li>• <span class="text-catppuccin-blue">Python</span> - Linguagem de programação</li>
+                <li>• <span class="text-catppuccin-green">Pandas</span> - Limpeza e modelagem de dados</li>
+                <li>• <span class="text-catppuccin-yellow">Matplotlib</span> - Gráficos</li>
+                <li>• <span class="text-catppuccin-peach">Scipy</span> - Funções estatísticas</li>
+                <li>• <span class="text-catppuccin-mauve">Seaborn</span> - Gráficos</li>
+                <li>• <span class="text-catppuccin-blue">NumPy</span> - Cálculos numéricos</li>
               </ul>
             </div>
           </div>
         </section>
 
-        <!-- Results -->
-        <section>
-          <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Resultados</h2>
-          <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-catppuccin-surface0 rounded-lg p-6 text-center">
-              <div class="text-3xl font-bold text-catppuccin-green mb-2">+18%</div>
-              <div class="text-catppuccin-subtext1">Taxa de Conversão</div>
-            </div>
-            <div class="bg-catppuccin-surface0 rounded-lg p-6 text-center">
-              <div class="text-3xl font-bold text-catppuccin-blue mb-2">-25%</div>
-              <div class="text-catppuccin-subtext1">Custo de Aquisição</div>
-            </div>
-            <div class="bg-catppuccin-surface0 rounded-lg p-6 text-center">
-              <div class="text-3xl font-bold text-catppuccin-mauve mb-2">+30%</div>
-              <div class="text-catppuccin-subtext1">Receita Total</div>
-            </div>
-          </div>
-        </section>
+        
 
         <!-- Challenges -->
         <section>
@@ -229,25 +199,15 @@ import Footer from '../../components/Footer';
             <div class="bg-catppuccin-surface0 rounded-lg p-6">
               <h3 class="text-lg font-semibold text-catppuccin-text mb-3">Desafio: Integração de Múltiplas Fontes</h3>
               <p class="text-catppuccin-subtext0 mb-3">
-                O projeto envolvia dados de diferentes sistemas (e-commerce, CRM, Google Analytics) 
-                com formatos e estruturas distintas.
+                O projeto envolvia dados de diferentes sistemas e vários CSVs,
+                o que exigia uma integração eficiente e consistente antes de qualquer análise.
+                
               </p>
               <p class="text-catppuccin-subtext0">
-                <strong>Solução:</strong> Criação de um processo de ETL robusto usando Power Query 
-                com tratamento de erros e validação de dados, garantindo consistência e qualidade.
+                <strong>Solução:</strong> Utilização de bibliotecas como Pandas para ler, limpar e integrar os dados de forma eficiente.
               </p>
             </div>
-            <div class="bg-catppuccin-surface0 rounded-lg p-6">
-              <h3 class="text-lg font-semibold text-catppuccin-text mb-3">Desafio: Performance de Consultas</h3>
-              <p class="text-catppuccin-subtext0 mb-3">
-                O volume de dados crescia rapidamente, causando lentidão nas consultas e atualizações.
-              </p>
-              <p class="text-catppuccin-subtext0">
-                <strong>Solução:</strong> Implementação de particionamento de dados, índices otimizados 
-                e cache inteligente, reduzindo o tempo de carregamento em 70%.
-              </p>
-            </div>
-          </div>
+            
         </section>
 
         <!-- Lessons Learned -->
@@ -257,20 +217,14 @@ import Footer from '../../components/Footer';
             <ul class="space-y-3 text-catppuccin-subtext0">
               <li class="flex items-start space-x-3">
                 <i class="fas fa-check text-catppuccin-green mt-1"></i>
-                <span>A importância de entender profundamente o negócio antes de começar a modelagem de dados</span>
+                <span>Uso do Scipy para análises estatísticas</span>
               </li>
+              
               <li class="flex items-start space-x-3">
                 <i class="fas fa-check text-catppuccin-green mt-1"></i>
-                <span>Como otimizar consultas DAX para melhor performance em grandes volumes de dados</span>
+                <span>A necessidade de criar gráficos intuitivos que atendam diferentes níveis de usuários</span>
               </li>
-              <li class="flex items-start space-x-3">
-                <i class="fas fa-check text-catppuccin-green mt-1"></i>
-                <span>A necessidade de criar dashboards intuitivos que atendam diferentes níveis de usuários</span>
-              </li>
-              <li class="flex items-start space-x-3">
-                <i class="fas fa-check text-catppuccin-green mt-1"></i>
-                <span>Como implementar automação para manter os dados sempre atualizados</span>
-              </li>
+            
             </ul>
           </div>
         </section>
