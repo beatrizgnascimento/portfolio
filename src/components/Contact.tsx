@@ -69,12 +69,7 @@ const Contact = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-catppuccin-lavender mb-4">
               Vamos Conversar
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-catppuccin-mauve to-catppuccin-blue mx-auto rounded-full mb-6"></div>
-            <p className="text-lg text-catppuccin-subtext0 max-w-3xl mx-auto">
-              Interessado em trabalhar juntos ou tem alguma pergunta? Entre em
-              contato e vamos discutir como posso ajudar com seus projetos de
-              dados.
-            </p>
+            
           </div>
 
           <div className="max-w-4xl mx-auto">
