@@ -35,7 +35,7 @@ const Hero = () => {
           }`}
         >
           {/* Profile Photo */}
-          <div className="mb-8 animate-fade-in">
+          <div className="mb-8 mt-20 animate-fade-in">
             <div className="w-32 h-32 md:w-48 md:h-48 mx-auto rounded-full bg-gradient-to-br from-catppuccin-mauve to-catppuccin-blue p-1 shadow-lg">
               <div className="w-full h-full rounded-full bg-catppuccin-surface0 flex items-center justify-center overflow-hidden">
                 {/* 
@@ -134,15 +134,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <a
-          href="#sobre"
-          className="text-catppuccin-subtext1 hover:text-catppuccin-lavender transition-colors duration-300"
-        >
-          <i className="fas fa-chevron-down text-2xl"></i>
-        </a>
-      </div>
+      
     </section>
   );
 };
