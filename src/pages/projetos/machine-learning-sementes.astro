@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 ---
 
-<Layout title="Desmatamento de Biomas e PIB">
+<Layout title="Machine Learning para Classificação e Agrupamento de Sementes">
   <Navbar client:load />
   
   <main class="pt-16 bg-catppuccin-base min-h-screen">
@@ -16,7 +16,7 @@ import Footer from '../../components/Footer';
           <li><i class="fas fa-chevron-right text-xs"></i></li>
           <li><a href="/#projetos" class="hover:text-catppuccin-lavender transition-colors">Projetos</a></li>
           <li><i class="fas fa-chevron-right text-xs"></i></li>
-          <li class="text-catppuccin-text">Desmatamento de Biomas e PIB</li>
+          <li class="text-catppuccin-text">Machine Learning para Classificação e Agrupamento de Sementes</li>
         </ol>
       </nav>
 
@@ -24,39 +24,43 @@ import Footer from '../../components/Footer';
       <header class="mb-12">
         <div class="bg-catppuccin-surface0 rounded-lg p-8 mb-8">
           <h1 class="text-4xl font-bold text-catppuccin-lavender mb-4">
-            Desmatamento de Biomas e PIB
+            Machine Learning para Classificação e Agrupamento de Sementes
           </h1>
           <p class="text-lg text-catppuccin-subtext0 mb-6">
-            Dashboard interativo que analisa o desmatamento de biomas brasileiros e sua relação com o PIB nos anos de 2013 a 2022.
+            Aplicação de técnicas de machine learning para classificar e agrupar sementes com base em suas características morfológicas.
           </p>
           
           <div class="flex flex-wrap gap-4 mb-6">
             
            
-            <span class="bg-catppuccin-yellow text-catppuccin-base px-3 py-1 rounded-full text-sm font-medium">
-              KNIME
+            <span class="bg-catppuccin-blue text-catppuccin-base px-3 py-1 rounded-full text-sm font-medium">
+              Python
             </span>
             <span class="bg-catppuccin-peach text-catppuccin-base px-3 py-1 rounded-full text-sm font-medium">
-              PowerBI
+              Scikit-learn
             </span>
             <span class="bg-catppuccin-mauve text-catppuccin-base px-3 py-1 rounded-full text-sm font-medium">
-              Power Query
+              Pandas
             </span>
-            <span class="bg-catppuccin-blue text-catppuccin-base px-3 py-1 rounded-full text-sm font-medium">
-              PostgreSQL
+            <span class="bg-catppuccin-peach text-catppuccin-base px-3 py-1 rounded-full text-sm font-medium">
+              Jupyter Notebook
             </span>
+            <span class="bg-catppuccin-red text-catppuccin-base px-3 py-1 rounded-full text-sm font-medium">
+              Git
+            </span>
+          
             
           </div>
 
           <div class="flex flex-wrap gap-4">
             <a 
-              href="https://app.powerbi.com/view?r=eyJrIjoiNDI5NjJlY2QtNGIwZi00NWE1LWE0NWUtMGUzZjFjOWQxMDNiIiwidCI6ImFkYWMzNzYyLWYzMWQtNDliNS1iYWI1LWY3NjcxNzZmZjQyNSJ9" 
+              href="https://github.com/beatrizgnascimento/trabalho-ML" 
               target="_blank" 
               rel="noopener noreferrer"
               class="flex items-center space-x-2 bg-catppuccin-surface1 text-catppuccin-text px-4 py-2 rounded-lg hover:bg-catppuccin-surface2 transition-colors"
             >
-                <i class="devicon-powerbi-plain colored text-xl"></i>
-              <span>Ver Dashboard</span>
+                <i class="fab fa-github"></i>
+              <span>Ver Código</span>
             </a>
             
           </div>
@@ -70,13 +74,16 @@ import Footer from '../../components/Footer';
           <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Visão Geral</h2>
           <div class="bg-catppuccin-surface0 rounded-lg p-6">
             <p class="text-catppuccin-subtext0 leading-relaxed mb-4">
-              Este projeto foi desenvolvido para a disciplina Introdução à Análise de Dados, na Universidade Federal de Itajubá,
-              com o objetivo de analisar o desmatamento de biomas brasileiros e sua relação com o PIB.
+              Este projeto foi desenvolvido para a disciplina de Inteligência Artificial, na Universidade Federal de Itajubá,
+              com o objetivo de aplicar técnicas de machine learning para classificar e agrupar sementes com base em suas características morfológicas.
+              Utilizando o dataset "Seeds", o projeto envolveu a aplicação de algoritmos de classificação e agrupamento,
+              para identificar padrões e relações entre as características das sementes.
             </p>
             <p class="text-catppuccin-subtext0 leading-relaxed">
-              O objetivo principal era criar uma visualização que permitisse explorar o impacto do desmatamento no PIB dos biomas brasileiros,
-              utilizando dados de desmatamento e PIB agropecuário e extrativista de 2013 a 2022. O projeto envolveu a coleta, limpeza e análise dos dados,
-              além do desenvolvimento de um dashboard interativo no Power BI.
+              O objetivo principal era explorar as técnicas de machine learning, como classificação e agrupamento, para entender melhor os dados das sementes.
+              O projeto incluiu a análise exploratória dos dados, a aplicação de algoritmos de machine learning e a visualização dos resultados.
+              Através deste projeto, foi possível aprender sobre a importância de pré-processamento de dados, a escolha adequada de algoritmos e a interpretação dos resultados obtidos
+              pelos modelos de machine learning.
             </p>
           </div>
         </section>
@@ -84,29 +91,18 @@ import Footer from '../../components/Footer';
         <!-- Objectives -->
         <section>
           <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Objetivos</h2>
-          <div class="grid md:grid-cols-2 gap-6">
+          <div class="grid md:grid-cols-1 gap-6">
             <div class="bg-catppuccin-surface0 rounded-lg p-6">
               <h3 class="text-lg font-semibold text-catppuccin-text mb-4 flex items-center">
                 <i class="fas fa-bullseye text-catppuccin-mauve mr-3"></i>
                 Principais Metas
               </h3>
               <ul class="space-y-2 text-catppuccin-subtext0">
-                <li>• Dashboard interativo para diferentes tipos de usuários</li>
-                <li>• Relacionar PIB e desmatamento de biomas</li>
-                <li>• Monitorar a saúde dos biomas e da economia</li>
+                <li>• Testar diferentes técnicas de agrupamento e classificação (KNN, K-Means, Random Florest)</li>
+                <li>• Verificar a performance de cada algoritmo</li>
               </ul>
             </div>
-            <div class="bg-catppuccin-surface0 rounded-lg p-6">
-              <h3 class="text-lg font-semibold text-catppuccin-text mb-4 flex items-center">
-                <i class="fas fa-chart-line text-catppuccin-blue mr-3"></i>
-                KPIs Monitorados
-              </h3>
-              <ul class="space-y-2 text-catppuccin-subtext0">
-                <li>• Eficiência - Monitorar o valor do PIB por hectare desmatado</li>
-                <li>• Pressão do desmatamento - Monitorar o quanto ainda há de vegetação nativa</li>
-      
-              </ul>
-            </div>
+            
           </div>
         </section>
 
@@ -116,16 +112,15 @@ import Footer from '../../components/Footer';
           
           <!-- Data Pipeline -->
           <div class="bg-catppuccin-surface0 rounded-lg p-6 mb-6">
-            <h3 class="text-xl font-semibold text-catppuccin-text mb-4">Pipeline de Dados</h3>
             <div class="space-y-4">
               <div class="flex items-start space-x-4">
                 <div class="flex-shrink-0 w-8 h-8 bg-catppuccin-green rounded-full flex items-center justify-center text-catppuccin-base text-sm font-bold">
                   1
                 </div>
                 <div>
-                  <h4 class="font-medium text-catppuccin-text">Extração de Dados</h4>
+                  <h4 class="font-medium text-catppuccin-text">Extração e Limpeza de Dados</h4>
                   <p class="text-catppuccin-subtext0 text-sm">
-                    Conexão com APIs do TerraBrasilis, IBGE, BDIA, bem como o uso de arquivos CSV do IpeaData
+                    Realização de ETL com Python, Pandas e NumPy para ler, limpar e integrar os dados do dataset
                   </p>
                 </div>
               </div>
@@ -134,9 +129,9 @@ import Footer from '../../components/Footer';
                   2
                 </div>
                 <div>
-                  <h4 class="font-medium text-catppuccin-text">Transformação e Limpeza</h4>
+                  <h4 class="font-medium text-catppuccin-text">Teste de Algoritmos</h4>
                   <p class="text-catppuccin-subtext0 text-sm">
-                    Limpeza de dados, tratamento de valores nulos, padronização de formatos e relações criadas usando o KNIME
+                    Aplicação de algoritmos de classificação e agrupamento (KNN, K-Means, Random Forest) para identificar padrões nos dados
                   </p>
                 </div>
               </div>
@@ -145,46 +140,28 @@ import Footer from '../../components/Footer';
                   3
                 </div>
                 <div>
-                  <h4 class="font-medium text-catppuccin-text">Modelagem de Dados</h4>
+                  <h4 class="font-medium text-catppuccin-text">Resultados</h4>
                   <p class="text-catppuccin-subtext0 text-sm">
-                    Modelagem relacional no PostgreSQL, inserção de dados transformados e criação de tabelas 
+                    Matrizes de confusão, acurácia e outras métricas para avaliar a performance dos modelos
                   </p>
                 </div>
               </div>
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0 w-8 h-8 bg-catppuccin-yellow rounded-full flex items-center justify-center text-catppuccin-base text-sm font-bold">
-                  4
-                </div>
-                <div>
-                  <h4 class="font-medium text-catppuccin-text">Visualização</h4>
-                  <p class="text-catppuccin-subtext0 text-sm">
-                    Uso do Power BI para criar dashboards interativos, gráficos e relatórios a partir dos dados modelados e extraídos
-                  </p>
-                </div>
-              </div>
+              
             </div>
           </div>
 
           <!-- Key Features -->
-          <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-catppuccin-surface0 rounded-lg p-6">
-              <h3 class="text-lg font-semibold text-catppuccin-text mb-4">Funcionalidades Principais</h3>
-              <ul class="space-y-2 text-catppuccin-subtext0">
-                <li>• Visão geral do desmatamento de biomas</li>
-                <li>• Visão geral do PIB agropecuário e extrativista dos biomas</li>
-                <li>• Relação do PIB com desmatamento</li>
-                <li>• Implementação de KPIs de monitoramento</li>
-               
-              </ul>
-            </div>
+          <div class="grid md:grid-cols-1 gap-6">
+            
             <div class="bg-catppuccin-surface0 rounded-lg p-6">
               <h3 class="text-lg font-semibold text-catppuccin-text mb-4">Tecnologias Utilizadas</h3>
               <ul class="space-y-2 text-catppuccin-subtext0">
-                <li>• <span class="text-catppuccin-peach">Power BI</span> - Visualização e dashboards</li>
-                <li>• <span class="text-catppuccin-yellow">KNIME</span> - ETL</li>
-                <li>• <span class="text-catppuccin-blue">PostgreSQL</span> - Banco de dados</li>
-                <li>• <span class="text-catppuccin-teal">DAX</span> - Cálculos e métricas</li>
-                <li>• <span class="text-catppuccin-mauve">Power Query</span> - ETL</li>
+                <li>• <span class="text-catppuccin-blue">Python</span> - Linguagem de Programação</li>
+                <li>• <span class="text-catppuccin-peach">Scikit-Learn</span> - Aplicação dos modelos de ML</li>
+                <li>• <span class="text-catppuccin-mauve">Pandas</span> - Manipulação e Limpeza dos dados</li>
+                <li>• <span class="text-catppuccin-peach">Jupyter Notebook</span> </li>
+                                <li>• <span class="text-catppuccin-red">Git</span> </li>
+
              
               </ul>
             </div>
@@ -193,30 +170,7 @@ import Footer from '../../components/Footer';
 
        
 
-        <!-- Challenges -->
-        <section>
-          <h2 class="text-2xl font-semibold text-catppuccin-text mb-6">Desafios e Soluções</h2>
-          <div class="space-y-4">
-            <div class="bg-catppuccin-surface0 rounded-lg p-6">
-              <h3 class="text-lg font-semibold text-catppuccin-text mb-3">Desafio: APIs nada documentadas</h3>
-              <p class="text-catppuccin-subtext0 mb-3">
-                Usar a API do Terra Brasilis foi um grande desafio, isso porque ela não era documentada. Descobri que ela existia revirando a página do TerraBrasilis, quando eu fazia o download de um CSV o site fazia uma requisição a uma API, então foi necessário fazer uma engenharia reversa para entender os campos do .json retornados pela API e verificar esses dados de acordo com os dashboards presentes no site da mesma.
-              </p>
-              <p class="text-catppuccin-subtext0">
-                <strong>Solução:</strong> Engenharia reversa e testes de qualidade para garantir a integridade dos dados.
-              </p>
-            </div>
-            <div class="bg-catppuccin-surface0 rounded-lg p-6">
-              <h3 class="text-lg font-semibold text-catppuccin-text mb-3">Desafio: Relacionamento de diferentes fontes de dados</h3>
-              <p class="text-catppuccin-subtext0 mb-3">
-                O volume de dados era alto e as fontes eram diversas, o que tornava difícil relacionar as informações de forma eficiente. Um estado pode conter vários biomas, o que exigia uma modelagem cuidadosa para evitar redundâncias e garantir a integridade referencial.
-              </p>
-              <p class="text-catppuccin-subtext0">
-                <strong>Solução:</strong> Relacionar os dados de desmatamento e PIB por ano e estado, utilizando chaves primárias e estrangeiras para garantir a integridade dos dados e os dados do CSV. A modelagem foi feita no PostgreSQL, onde criei tabelas específicas para cada bioma e suas relações com os estados.
-              </p>
-            </div>
-          </div>
-        </section>
+    
 
         <!-- Lessons Learned -->
         <section>
@@ -225,20 +179,13 @@ import Footer from '../../components/Footer';
             <ul class="space-y-3 text-catppuccin-subtext0">
               <li class="flex items-start space-x-3">
                 <i class="fas fa-check text-catppuccin-green mt-1"></i>
-                <span>A importância de garantir a qualidade dos dados extraídos para evitar erros</span>
+                <span>Aplicação de diferentes modelos de aprendizado de máquina</span>
               </li>
               <li class="flex items-start space-x-3">
                 <i class="fas fa-check text-catppuccin-green mt-1"></i>
-                <span>Como otimizar consultas DAX para melhor performance em grandes volumes de dados</span>
+                <span>Testes e otimizações no dataset inicial para a melhor performance do agrupamento e classificação</span>
               </li>
-              <li class="flex items-start space-x-3">
-                <i class="fas fa-check text-catppuccin-green mt-1"></i>
-                <span>A necessidade de criar dashboards intuitivos que atendam diferentes níveis de usuários</span>
-              </li>
-              <li class="flex items-start space-x-3">
-                <i class="fas fa-check text-catppuccin-green mt-1"></i>
-                <span>Engenharia Reversa</span>
-              </li>
+              
             </ul>
           </div>
         </section>

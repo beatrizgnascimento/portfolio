@@ -78,9 +78,9 @@ const Projects = () => {
     {
       id: 4,
       title:
-        "Relatório Ad Hoc de Desmatamento de Biomas e suas características",
+        "Relatório Ad Hoc de Desmatamento de Biomas e suas Características",
       description:
-        "DBA de banco de dados para a criação de uma aplicação Ad Hoc sobre desmatamento",
+        "Atuação como DBA para a criação de uma aplicação Ad Hoc sobre desmatamento",
       category: "bd",
       image: "/api/placeholder/400/250",
       technologies: ["PostgreSQL", "KNIME"],
