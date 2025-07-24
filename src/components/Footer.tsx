@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="mb-6">
               <h3 className="text-2xl font-bold text-catppuccin-lavender mb-2">
-                Beatriz
+                Beatriz Nascimento
               </h3>
               <p className="text-catppuccin-subtext0 leading-relaxed">
                 Analista de Dados e Business Intelligence apaixonada por
