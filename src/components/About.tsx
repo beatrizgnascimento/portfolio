@@ -90,14 +90,21 @@ const About = () => {
                 sempre busquei entender o mundo através de números e padrões.
                 Hoje, como Analista de Dados, minha missão é transformar dados
                 brutos em insights valiosos que impulsionam decisões
-                estratégicas. Com experiência em análise de dados, business
-                intelligence, banco de dados, estatística e machine learning,
-                estou sempre em busca de aprender e aplicar novas tecnologias
-                para resolver problemas complexos. Atuo com todo o ecossistema
-                de dados: pipelines ETL, modelagem, visualizações impactantes e
-                até modelos de machine learning. Gosto de transformar
-                complexidade em clareza e acredito que dados bem explorados
-                transformam qualquer negócio.
+                estratégicas.
+              </p>
+
+              <p className="text-catppuccin-subtext0 leading-relaxed">
+                Com experiência em análise de dados, business intelligence,
+                banco de dados, estatística e machine learning, estou sempre em
+                busca de aprender e aplicar novas tecnologias para resolver
+                problemas complexos. Atuo com todo o ecossistema de dados:
+                pipelines ETL, modelagem, visualizações impactantes e até
+                modelos de machine learning.
+              </p>
+
+              <p className="text-catppuccin-subtext0 leading-relaxed">
+                Gosto de transformar complexidade em clareza e acredito que
+                dados bem explorados transformam qualquer negócio.
               </p>
 
               {/* Key Highlights */}
