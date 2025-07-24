@@ -151,7 +151,7 @@ const About = () => {
                     Sistemas de Informação
                   </h5>
                   <p className="text-sm text-catppuccin-subtext0">
-                    Universidade Federal de Itajubá - 2023-2027
+                    Universidade Federal de Itajubá - 2023-2026
                   </p>
                 </div>
               </div>
