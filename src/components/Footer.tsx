@@ -16,18 +16,6 @@ const Footer = () => {
       url: "https://github.com/beatriz",
       color: "hover:text-catppuccin-mauve",
     },
-    {
-      name: "Twitter",
-      icon: "fab fa-twitter",
-      url: "https://twitter.com/beatriz",
-      color: "hover:text-catppuccin-sky",
-    },
-    {
-      name: "Medium",
-      icon: "fab fa-medium",
-      url: "https://medium.com/@beatriz",
-      color: "hover:text-catppuccin-green",
-    },
   ];
 
   const quickLinks = [
@@ -50,8 +38,7 @@ const Footer = () => {
               </h3>
               <p className="text-catppuccin-subtext0 leading-relaxed">
                 Analista de Dados e Business Intelligence apaixonada por
-                transformar dados em insights valiosos. Especializada em machine
-                learning, visualização de dados e análise estatística.
+                transformar dados em insights valiosos.
               </p>
             </div>
 
