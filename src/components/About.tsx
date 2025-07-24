@@ -86,14 +86,18 @@ const About = () => {
               </h3>
 
               <p className="text-catppuccin-subtext0 leading-relaxed">
-                Entusiasta de dados e movida pela curiosidade, comecei minha
-                jornada tentando entender padrões. Hoje, crio soluções
-                inteligentes que ajudam negócios a tomarem decisões estratégicas
-                com confiança. Atuo com todo o ecossistema de dados: pipelines
-                ETL, modelagem, visualizações impactantes e até modelos de
-                machine learning. Gosto de transformar complexidade em clareza e
-                acredito que dados bem explorados não só explicam o passado, mas
-                também antecipam o futuro.
+                Entusiasta de dados e movida pela curiosidade desde pequena,
+                sempre busquei entender o mundo através de números e padrões.
+                Hoje, como Analista de Dados, minha missão é transformar dados
+                brutos em insights valiosos que impulsionam decisões
+                estratégicas. Com experiência em análise de dados, business
+                intelligence, banco de dados, estatística e machine learning,
+                estou sempre em busca de aprender e aplicar novas tecnologias
+                para resolver problemas complexos. Atuo com todo o ecossistema
+                de dados: pipelines ETL, modelagem, visualizações impactantes e
+                até modelos de machine learning. Gosto de transformar
+                complexidade em clareza e acredito que dados bem explorados
+                transformam qualquer negócio.
               </p>
 
               {/* Key Highlights */}
