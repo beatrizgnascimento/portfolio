@@ -53,7 +53,7 @@ const Projects = () => {
       id: 2,
       title: "Análise dos Candidatos a Prefeito em São Paulo (2024)",
       description:
-        "Análise estatística dos candidatos a prefeito de São Paulo, incluindo visualização de dados eleitorais e predições de resultados.",
+        "Análise estatística dos candidatos a prefeito de São Paulo, incluindo visualização de dados eleitorais.",
       category: "estatistica",
       image: "/api/placeholder/400/250",
       technologies: ["Python", "NumPy", "Pandas", "SciPy", "Matplotlib"],
@@ -82,7 +82,7 @@ const Projects = () => {
       description:
         "Atuação como DBA para a criação de uma aplicação Ad Hoc sobre desmatamento",
       category: "bd",
-      image: "/api/placeholder/400/250",
+      image: "images/etladhoc.png",
       technologies: ["PostgreSQL", "KNIME"],
       link: "/projetos/adhoc-desmatamento",
       featured: false,
