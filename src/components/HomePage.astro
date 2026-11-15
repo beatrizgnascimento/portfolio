@@ -1,0 +1,75 @@
+---
+import Layout from '../layouts/Layout.astro';
+import QuietCorner from './QuietCorner.astro';
+import SiteNav from './SiteNav.astro';
+import { content, skills, type Locale } from '../data/content';
+
+interface Props { locale: Locale; }
+const { locale } = Astro.props;
+const t = content[locale];
+const contacts = [
+  { name: 'GitHub', href: 'https://github.com/beatrizgnascimento' },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/beatriz-gnascimento/' },
+  { name: t.email, href: 'mailto:beatrizgnascimento1@gmail.com' },
+];
+---
+
+<Layout title={`Beatriz Nascimento — ${t.role}`} description={t.description} locale={locale}>
+  <main class="page">
+    <SiteNav current="home" locale={locale} />
+    <section class="intro" aria-labelledby="name">
+      <div class="intro-copy">
+        <p class="eyebrow">{t.greeting}</p>
+        <h1 id="name">Beatriz<br />Nascimento</h1>
+        <p class="role">{t.role}</p>
+        <nav class="contacts" aria-label={t.contacts}>
+          {contacts.map(({ name, href }) => (
+            <a href={href} target={href.startsWith('https:') ? '_blank' : undefined}
+              rel={href.startsWith('https:') ? 'noopener noreferrer' : undefined}>
+              {name}<svg viewBox="0 0 16 16" width="13" height="13" fill="none" aria-hidden="true"><path d="M4 12 12 4M4 4h8v8" /></svg>
+            </a>
+          ))}
+        </nav>
+      </div>
+      <div class="illustration" aria-hidden="true"><QuietCorner /></div>
+    </section>
+
+    <section class="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><h2 id="experience-title">{t.experience}</h2></div>
+      <ol class="experience-list">
+        {t.jobs.map((job) => (
+          <li class="experience-item">
+            <div class="company-heading"><h3>{job.company}</h3>{!job.endDate && <span class="current">{t.current}</span>}</div>
+            <p class="position">{job.role}</p>
+            <p class="period"><time datetime={job.startDate}>{job.start}</time><span aria-hidden="true"> — </span><span class="sr-only">{t.until}</span>{job.endDate ? <time datetime={job.endDate}>{job.end}</time> : job.end}</p>
+            <ul class="experience-details">{job.details.map((detail) => <li>{detail}</li>)}</ul>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section class="additional-section" aria-labelledby="skills-title">
+      <div class="section-heading"><h2 id="skills-title">{t.skills}</h2></div>
+      <ul class="skills-list">{skills.map((skill) => <li>{skill}</li>)}</ul>
+    </section>
+    <section class="additional-section" aria-labelledby="certifications-title">
+      <div class="section-heading"><h2 id="certifications-title">{t.certifications}</h2></div>
+      <ul class="certifications-list">
+        <li>DELE - International Spanish Certificate</li>
+        <li>EFSET English Certificate (C2 Proficient)</li>
+      </ul>
+    </section>
+    <section class="additional-section" aria-labelledby="education-title">
+      <div class="section-heading"><h2 id="education-title">{t.education}</h2></div>
+      <div class="education-content">
+        <h3>{t.degree}</h3>
+        <p>Universidade Federal de Itajubá</p>
+        <p class="education-period"><time datetime="2023">2023</time> — <time datetime="2027">2027</time></p>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <span>© {new Date().getFullYear()} Beatriz Nascimento</span>
+      <span class="footer-cat" aria-hidden="true">/\_/\<br />( ·.· )</span>
+    </footer>
+  </main>
+</Layout>

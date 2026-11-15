@@ -1,47 +1,23 @@
-# Astro Starter Kit: Minimal
+# Beatriz Nascimento
+
+Página pessoal minimalista em branco e cinza, feita com Astro e CSS, com versões em português e inglês e temas claro e escuro. Um pequeno script preserva a preferência de tema no navegador. Não usa fontes externas ou bibliotecas de ícones.
+
+Contém identificação, GitHub, LinkedIn, e-mail, experiências profissionais na NexAtlas e no iFood Pago, skills, certificações e formação. A aba Blog abre uma página própria, ainda sem publicações. As rotas em português são `/` e `/blog/`; em inglês, `/en/` e `/en/blog/`. A troca de idioma preserva a página atual. O desenho animado em SVG acompanha o tema e respeita a preferência por movimento reduzido.
+
+## Desenvolvimento
 
 ```sh
-npm create astro@latest -- --template minimal
+npm ci
+npm run dev
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Build e prévia
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```sh
+npm run build
+npm run preview
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+O site estático é gerado em `dist/`. Textos, traduções, skills e períodos profissionais ficam em `src/data/content.ts`; os contatos, em `src/components/HomePage.astro`; o visual, em `src/styles/global.css`.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Para hospedar em outro subdiretório, configure `base` em `astro.config.mjs`. Para publicar no GitHub Pages, execute `npm run deploy`: o `predeploy` gera o site com o caminho `/portfolio` e o publica na branch `gh-pages`.

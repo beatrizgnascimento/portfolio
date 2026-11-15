@@ -7,21 +7,13 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "predeploy": "astro build --base=/portfolio",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@astrojs/react": "^4.3.0",
-    "@astrojs/tailwind": "^6.0.2",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "astro": "^5.9.4",
-    "lodash": "^4.17.21",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-icons": "^5.5.0",
-    "tailwindcss": "^3.4.17"
+    "astro": "^5.9.4"
   },
-  "homepage": "https://beatrizgnascimento.github.io/portfolio-beatriz",
+  "homepage": "https://beatrizgnascimento.github.io/portfolio",
   "devDependencies": {
     "gh-pages": "^6.3.0"
   }

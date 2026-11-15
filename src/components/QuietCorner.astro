@@ -1,0 +1,70 @@
+<!-- Hand-drawn silhouette, oversized eyes and coffee inspired by the user's reference. -->
+<svg class="study-cat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 300" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Small, dangling body and a long arm around the oversized coffee cup. -->
+  <path d="M130 170c-7 16-6 36-5 48l1 27c2 8 14-9 20-19l9 19c6 8 16-14 18-27l4-28 65 18 9-24-68-19" fill="var(--paper)" />
+  <path class="cat-tail" d="M128 202c-19-10-25 3-18 10 6 5 13-2 9-6" stroke-width="2.8" />
+
+  <!-- Large mug, with imperfect marker-like contours and a dark coffee surface. -->
+  <g class="coffee-cup">
+    <path d="M251 136c1 28 0 67 4 97 2 13 51 22 64 9 7-15 7-77 8-106" fill="var(--paper)" />
+    <path d="M330 160c37-17 42 74 7 87m-3-69c18-8 22 44 4 50" />
+    <path d="M252 140c-11-9 2-16 33-15 27 1 47 4 41 13" />
+    <path d="M257 137c10-7 52-5 65 1-15 8-51 9-65-1Z" fill="currentColor" stroke-width="1.4" />
+    <path d="m262 229 1 7m49-58-1 41" stroke-width="1.2" opacity=".45" />
+    <path class="coffee-steam steam-one" d="M273 111c-9-11 10-17 2-29" stroke-width="2" />
+    <path class="coffee-steam steam-two" d="M294 111c-8-10 9-15 2-26" stroke-width="2" />
+  </g>
+
+  <g class="cat-head">
+    <!-- Uneven pointed ears and a broad, low face follow the reference silhouette. -->
+    <path d="M101 113c-3-12-1-23 2-36l4-21 22 22c15-6 33-8 52-5l27-29 10 42c15 28 16 53 0 71-14 18-36 23-57 22-25-1-43-12-55-32-8-13-10-24-5-34Z" fill="var(--paper)" />
+    <path d="m102 132-24-17m26 29-31-4m35 13-26 10m140-32 24-17m-22 29 24-4m-26 14 20 7" stroke-width="2.8" />
+    <!-- The thin frames follow the eye shape instead of adding large round glasses. -->
+    <path d="M105 125c18-5 39 4 46 20 3 10 0 20-4 29-17-1-32-10-39-23-4-8-6-17-3-26Zm66 45c-9-15-1-38 17-48 14-9 28 8 27 21-1 13-19 26-44 27Zm-20-29c7-4 13-3 20 1" stroke-width="1.7" />
+    <g class="cat-eyes">
+      <path d="M142 129c-11 3-26 20-23 33 9 13 23 12 29-1 5-11 4-23-6-32Zm46-6c-3 13 4 27 15 36 13-7 15-19 7-30-6-8-14-10-22-6Z" fill="currentColor" stroke-width="1.6" />
+      <path d="m138 132-16 25m68-29 10 24" stroke="var(--paper)" stroke-width="1.2" opacity=".65" />
+    </g>
+    <path d="m155 168 5 3 4-4" stroke-width="1.8" />
+  </g>
+
+  <!-- The second paw hugs the mug, as in the reference. -->
+  <g class="coffee-paw">
+    <path d="m239 175 16-2c9-1 14 3 13 10-1 6-9 10-24 10l-5-18Z" fill="var(--paper)" stroke-width="3" />
+  </g>
+
+  <!-- A compact laptop keeps the cat, rather than the computer, as the focal point. -->
+  <path d="m19 172 70 7 18 53-70-8Zm9 9 54 5 12 35-52-5Z" fill="var(--paper)" stroke-width="2.8" />
+  <path class="screen-lines" d="m40 193 11 1m5 1 14 1m-27 7 30 4m-26 6 15 1" stroke-width="1.5" />
+  <path class="screen-cursor" d="m69 215 7 1" stroke-width="2" />
+  <path d="m37 224 70 8 31 18-76-8Zm25 18 1 5 73 9 2-6" fill="var(--paper)" stroke-width="2.7" />
+  <path d="m56 231 44 5 14 9-47-6Zm9 4 42 5m-32-7 8 8m7-6 8 8" stroke-width="1.1" />
+  <!-- A small arm and paw type on the keyboard. -->
+  <g class="typing-paw">
+    <path d="M124 183c-5 12-13 25-23 37l-12 9c-7 7-3 13 8 13 10-1 18-8 24-14l17-23" fill="var(--paper)" stroke-width="3.1" />
+    <path d="m94 230 3 6m3-9 3 6" stroke-width="1.3" />
+  </g>
+  <path d="m45 267 83 4m121-7 68 2" stroke="var(--faint)" stroke-width="1.2" stroke-dasharray=".2 5" />
+</svg>
+
+<style>
+  .study-cat { overflow: visible; color: var(--ink); }
+  .typing-paw { transform-origin: 126px 191px; animation: type .55s ease-in-out infinite; }
+  .coffee-paw { animation: hold 4s ease-in-out infinite; }
+  .cat-head { transform-origin: 161px 177px; animation: concentrate 4s ease-in-out infinite; }
+  .cat-eyes { transform-origin: 162px 148px; animation: blink 6.8s linear infinite; }
+  .cat-tail { transform-origin: 127px 204px; animation: tail 3s ease-in-out infinite; }
+  .coffee-steam { animation: steam 3.6s ease-in-out infinite; }
+  .steam-two { animation-delay: -1.8s; }
+  .screen-cursor { animation: cursor 1.1s steps(1) infinite; }
+  @keyframes type { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-3deg) translateY(-1px); } }
+  @keyframes hold { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(1px); } }
+  @keyframes concentrate { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-1.4deg); } }
+  @keyframes blink { 0%, 44%, 47%, 100% { transform: scaleY(1); } 45.5% { transform: scaleY(.05); } }
+  @keyframes tail { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(5deg); } }
+  @keyframes steam { 0%, 100% { transform: translateY(2px); opacity: .25; } 50% { transform: translateY(-5px); opacity: .65; } }
+  @keyframes cursor { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) {
+    .study-cat * { animation: none; }
+  }
+</style>

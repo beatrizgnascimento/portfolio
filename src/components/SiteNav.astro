@@ -1,0 +1,30 @@
+---
+import { content, type Locale } from '../data/content';
+interface Props { current: 'home' | 'blog'; locale: Locale; }
+const { current, locale } = Astro.props;
+const base = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/`;
+const t = content[locale].nav;
+const localeBase = `${base}${locale === 'en' ? 'en/' : ''}`;
+const pageSuffix = current === 'blog' ? 'blog/' : '';
+---
+
+<header class="page-header">
+  <nav class="site-nav" aria-label={t.label}>
+    <a href={localeBase} aria-current={current === 'home' ? 'page' : undefined}>{t.home}</a>
+    <a href={`${localeBase}blog/`} aria-current={current === 'blog' ? 'page' : undefined}>Blog</a>
+  </nav>
+  <div class="preferences">
+    <nav class="language-switch" aria-label={t.language}>
+      <a href={`${base}${pageSuffix}`} lang="pt-BR" hreflang="pt-BR" aria-label="Português" aria-current={locale === 'pt' ? 'true' : undefined}>PT</a>
+      <a href={`${base}en/${pageSuffix}`} lang="en" hreflang="en" aria-label="English" aria-current={locale === 'en' ? 'true' : undefined}>EN</a>
+    </nav>
+    <div class="theme-switch" role="group" aria-label={t.theme}>
+      <button type="button" data-theme-option="light" aria-label={t.light} title={t.light} aria-pressed="false">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" /></svg>
+      </button>
+      <button type="button" data-theme-option="dark" aria-label={t.dark} title={t.dark} aria-pressed="false">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13.5A8.5 8.5 0 0 1 10.5 3a8.5 8.5 0 1 0 10 10.5Z" /></svg>
+      </button>
+    </div>
+  </div>
+</header>

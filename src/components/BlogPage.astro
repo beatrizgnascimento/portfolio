@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SiteNav from './SiteNav.astro';
+import { content, type Locale } from '../data/content';
+interface Props { locale: Locale; }
+const { locale } = Astro.props;
+const t = content[locale].blog;
+---
+
+<Layout title={t.title} description={t.description} locale={locale}>
+  <main class="page blog-page">
+    <SiteNav current="blog" locale={locale} />
+    <section class="blog-intro" aria-labelledby="blog-title">
+      <p class="eyebrow">{t.eyebrow}</p>
+      <h1 id="blog-title">Blog</h1>
+      <p class="blog-description">{t.introduction}</p>
+    </section>
+    <section class="blog-empty" aria-labelledby="publications-title">
+      <div class="section-heading"><h2 id="publications-title">{t.publications}</h2></div>
+      <p>{t.empty}</p>
+      <span class="blog-cat" aria-hidden="true">/\_/\<br />( o.o )<br /> / &gt;☕</span>
+    </section>
+    <footer class="page-footer"><span>© {new Date().getFullYear()} Beatriz Nascimento</span></footer>
+  </main>
+</Layout>
