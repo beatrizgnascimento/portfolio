@@ -44,7 +44,7 @@
   <path class="screen-cursor" d="m69 215 7 1" stroke-width="2" />
   <path d="m37 224 70 8 31 18-76-8Zm25 18 1 5 73 9 2-6" fill="var(--paper)" stroke-width="2.7" />
   <path d="m56 231 44 5 14 9-47-6Zm9 4 42 5m-32-7 8 8m7-6 8 8" stroke-width="1.1" />
-  <!-- A small arm and paw type on the keyboard. -->
+  <!-- A small arm and paw rest on the keyboard. -->
   <g class="typing-paw">
     <path d="M124 183c-5 12-13 25-23 37l-12 9c-7 7-3 13 8 13 10-1 18-8 24-14l17-23" fill="var(--paper)" stroke-width="3.1" />
     <path d="m94 230 3 6m3-9 3 6" stroke-width="1.3" />
@@ -54,22 +54,5 @@
 
 <style>
   .study-cat { overflow: visible; color: var(--ink); }
-  .typing-paw { transform-origin: 126px 191px; animation: type .55s ease-in-out infinite; }
-  .coffee-paw { animation: hold 4s ease-in-out infinite; }
-  .cat-head { transform-origin: 161px 177px; animation: concentrate 4s ease-in-out infinite; }
-  .cat-eyes { transform-origin: 162px 148px; animation: blink 6.8s linear infinite; }
-  .cat-tail { transform-origin: 127px 204px; animation: tail 3s ease-in-out infinite; }
-  .coffee-steam { animation: steam 3.6s ease-in-out infinite; }
-  .steam-two { animation-delay: -1.8s; }
-  .screen-cursor { animation: cursor 1.1s steps(1) infinite; }
-  @keyframes type { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-3deg) translateY(-1px); } }
-  @keyframes hold { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(1px); } }
-  @keyframes concentrate { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-1.4deg); } }
-  @keyframes blink { 0%, 44%, 47%, 100% { transform: scaleY(1); } 45.5% { transform: scaleY(.05); } }
-  @keyframes tail { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(5deg); } }
-  @keyframes steam { 0%, 100% { transform: translateY(2px); opacity: .25; } 50% { transform: translateY(-5px); opacity: .65; } }
-  @keyframes cursor { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
-  @media (prefers-reduced-motion: reduce) {
-    .study-cat * { animation: none; }
-  }
+  .coffee-steam { opacity: .45; }
 </style>

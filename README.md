@@ -2,7 +2,7 @@
 
 Página pessoal minimalista em branco e cinza, feita com Astro e CSS, com versões em português e inglês e temas claro e escuro. Um pequeno script preserva a preferência de tema no navegador. Não usa fontes externas ou bibliotecas de ícones.
 
-Contém identificação, GitHub, LinkedIn, e-mail, experiências profissionais na NexAtlas e no iFood Pago, skills, certificações e formação. A aba Blog abre uma página própria, ainda sem publicações. As rotas em português são `/` e `/blog/`; em inglês, `/en/` e `/en/blog/`. A troca de idioma preserva a página atual. O desenho animado em SVG acompanha o tema e respeita a preferência por movimento reduzido.
+Contém identificação, GitHub, LinkedIn, e-mail, experiências profissionais na NexAtlas e no iFood Pago, skills, certificações e formação. A aba Blog abre uma página própria, ainda sem publicações. As rotas em português são `/` e `/blog/`; em inglês, `/en/` e `/en/blog/`. A troca de idioma preserva a página atual. O desenho estático em SVG acompanha o tema.
 
 ## Desenvolvimento
 
